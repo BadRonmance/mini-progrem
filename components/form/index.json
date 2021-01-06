@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ebring-upload-img": "../upload-img/index"
+  }
+}

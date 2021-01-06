@@ -1,0 +1,9 @@
+<view class="custom_header" style="background:{{style.background}}">
+      <view class="statusBarHeight" style="height:{{statusBarHeight}};"></view>
+      <view class="header rel" style="height:{{height}}">
+            <text class="header_text">{{style.lineText}}</text>
+            <view catchtap="navbarPage" class="ab t_c left_btn color_f fon_40" wx:if="{{navbarType.type!=='0'}}">
+                  <image class="icon transform_center" src="{{navbarType.iconList[navbarType.type]}}"></image>
+            </view>
+      </view>
+</view>

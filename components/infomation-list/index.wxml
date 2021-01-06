@@ -1,0 +1,19 @@
+<view class="t_c pa_18" wx:if="{{infomationList.length===0}}">
+      <van-loading color="#1989fa" size="24px" />
+</view>
+<block wx:else>
+      <view class="ba_f pa_18 infomation primary_btn" wx:for="{{infomationList}}" wx:key="*this">
+            <view class="fon_32 fon_wei">
+                  {{item.subtitle}}
+            </view>
+            <view class="flex mar_t-18">
+                  <image wx:if="{{item.coverPictureUrl&&item.coverPictureUrl!=''}}" mode="aspectFill"
+                        src="{{item.coverPictureUrl}}" class="flex-grow-0 mar_r-18 infomation_img"></image>
+                  <view class="flex-grow-1 fon_30 color_6">
+                        <view class="hydlnr_3">
+                              {{item.author}}
+                        </view>
+                  </view>
+            </view>
+      </view>
+</block>

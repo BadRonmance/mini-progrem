@@ -1,0 +1,28 @@
+@import "../../assets/css/public.wxss";
+
+.infomation {
+      border-radius: 8rpx;
+      overflow: hidden;
+      border-bottom: 2rpx solid #e5e5e5;
+}
+
+.infomation_img {
+      width: 260rpx;
+      height: 150rpx;
+      border-radius: 10rpx;
+      overflow: hidden;
+}
+
+.list_item {
+      /* position: relative; */
+      /* z-index: 1; */
+      transition: all 1s;
+      opacity: 0;
+      transform: translateY(20rpx);
+}
+
+.list_enter,
+.list_leave_to {
+      opacity: 1;
+      transform: translateY(0);
+}

@@ -1,0 +1,129 @@
+<!--表单元素-->
+<view class="formPage pa_18">
+  <form catchsubmit="formSubmit">
+    <block wx:for="{{formData.data}}" wx:key="id">
+      <view class="formItem flex">
+        <view class="label flex-grow-0 t_r" style="width:{{formData.labelWidth?formData.labelWidth:'200rpx'}}">
+          <text class="color_red" wx:if="{{item.isRequire}}">*</text>
+          {{item.label}}:
+        </view>
+        <!-- input输入框 -->
+        <view class="flex flex-grow-1 border" wx:if="{{item.type=='text'}}">
+          <input type="text" name="{{item.prop}}" disabled="{{item.isDisabled}}" 
+          value="{{item.value}}" placeholder="{{item.placeholder}}" class="flex-grow-1" />
+          <view wx:if="{{item.verificationCode}}" class="flex-grow-0 verificationCode" data-index="{{index}}" bindtap="getVerificationCode">
+            {{item.verificationCode.text}}
+          </view>
+        </view>
+        <!-- 密码 -->
+        <view class="flex flex-grow-1 border" wx:if="{{item.type=='password'}}">
+          <input type="text" password="{{item.password}}" name="{{item.prop}}" disabled="{{item.isDisabled}}" 
+          value="{{item.value}}" placeholder="{{item.placeholder}}" />
+          <view data-index="{{index}}" bindtap="changeInputType">
+            <image class="img_icon" src="{{item.src}}" />
+          </view>
+        </view>
+        <!-- 多选 -->
+        <view class="flex flex-grow-1" wx:if="{{item.type=='checkbox'}}">
+          <checkbox-group class="flex" name="{{item.prop}}" >
+            <label class="radio flex-y-center" wx:for="{{item.radioData}}" wx:key="idx" wx:for-index="idx" wx:for-item="val">
+              <checkbox value="{{val.value}}" checked="{{val.value==item.value}}" disabled="{{item.isDisabled}}"/>{{val.label}}
+            </label>
+          </checkbox-group>
+        </view>
+        <!-- 单选 -->
+        <view class="flex flex-grow-1" wx:if="{{item.type=='radio'}}">
+          <radio-group class="flex" name="{{item.prop}}">
+            <label class="radio flex-y-center" wx:for="{{item.radioData}}" wx:key="idx" wx:for-index="idx" wx:for-item="val">
+              <radio value="{{val.value}}" color="red" checked="{{val.value==item.value}}" disabled="{{item.isDisabled}}"/>{{val.label}}
+            </label>
+          </radio-group>
+        </view>
+        <!-- 日期选择器 -->
+        <view class="border flex-grow-1" wx:if="{{item.type=='date'}}">
+          <picker mode="date" class="pickerBox" value="{{item.value}}" data-index="{{index}}" bindchange="bindDateChange">
+            <view class="picker">
+              <view class="color_6" wx:if="{{!item.value}}">{{item.placeholder}}</view>
+              <block wx:else>{{item.value}}</block>
+            </view>
+          </picker>
+          <!-- <view class="noInput" data-isShow="{{true}}" data-index="{{index}}" bindtap="onDisplay">
+            <view class="color_6" wx:if="{{!item.value}}">{{item.placeholder}}</view>
+            <block wx:else>{{item.value}}</block>
+          </view> -->
+        </view>
+        <!-- 下拉选择 -->
+        <view class="border flex-grow-1" wx:if="{{item.type=='select'}}">
+          <picker range="{{item.selectData}}" data-type="select" data-index="{{index}}" range-key="{{'name'}}" 
+          value="{{item.selectData[index].id}}" 
+            bindchange="bindPickerChange">
+            <view class="picker">
+              <view class="color_6" wx:if="{{!item.value}}">{{item.placeholder}}</view>
+              <block wx:else>{{item.text}}</block>
+            </view>
+          </picker>
+        </view>
+         
+        <!-- 省市区选择 -->
+        <view class="border flex-grow-1" wx:if="{{item.type=='region'}}">
+          <view class="noInput" data-isShow="{{true}}" bindtap="regionArea">
+            <view wx:if="{{!item.value}}">{{item.placeholder}}</view>
+            <block wx:else>{{item.value}}</block>
+          </view>
+          <!-- <picker mode="region" value="{{item.value}}" disabled="{{item.isDisabled}}">
+            <view class="picker">
+              <block wx:if="{{item.value}}">
+                {{item.value[0]}}，{{item.value[1]}}，{{item.value[2]}}
+              </block>
+              <block wx:else>
+                请选择地址
+              </block>
+            </view>
+          </picker> -->
+        </view>
+        <!-- 编辑框 -->
+        <view class="flex-grow-1" wx:if="{{item.type=='textarea'}}">
+          <textarea class="textarea" bindblur="bindTextAreaBlur" name="{{item.prop}}" value="{{item.value}}" disabled="{{item.isDisabled}}"
+            auto-height placeholder="{{item.placeholder}}" />
+        </view>
+        <!-- 上传文件 -->
+        <view class="flex-grow-1" wx:if="{{item.type=='img'}}">
+          <ebring-upload-img img-val="{{item}}" bindchangeImg="changeImg"></ebring-upload-img>
+        </view>
+        <!-- 上传文件END -->
+      </view>
+    </block>
+    <!-- 省市区选择区 START   hidden="{{regionAreaShow}}"  -->
+    <view class="regionArea wid fixed_bottom {{!regionAreaShow?'areaHidden':'areaShow'}}">
+      <van-area title="省市区选择" :area-list="areaList" data-isShow="{{false}}" bindcancel="regionArea" >
+      </van-area>
+    </view>
+    <!-- 省市区选择区 END  -->
+
+    <!-- 日期选择器弹出层 START -->
+    <!-- <view class="regionArea wid fixed_bottom {{!dataBoxShow?'areaHidden':'areaShow'}}">
+      <van-datetime-picker type="date" data-index="{{dataIndex}}" data-isShow="{{false}}"
+        value="{{currentDate}}"
+        min-date="{{minDate}}"
+        max-date="{{maxDate}}"
+        bind:cancel="onDisplay"
+        bind:confirm="changeDate"
+        formatter="{{formatter}}"
+      />
+    </view> -->
+    <!-- 日期选择器弹出层 END -->
+
+    <!-- 注册特有 START -->
+    <view wx:if="{{formData.register}}" class="registerBox fon_24">
+      <label for="register" class="flex flex-y-center">
+        <checkbox class="register" name="register" value="{{formData.register.value}}"></checkbox>
+        我已阅读并同意<navigator>《FIBA中国数字化平台用户协议》</navigator>
+      </label>
+    </view>
+    <!-- 注册特有 END -->
+
+    <view class="flex">
+      <button class="btn" style="width:{{formData.button.width}}" type="primary" formType="submit">{{formData.button.text}}</button>
+    </view>
+  </form>
+</view>

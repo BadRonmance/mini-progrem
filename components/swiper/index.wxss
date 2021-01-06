@@ -1,0 +1,12 @@
+/* components/swiper/index.wxss */
+@import "../../assets/css/public.wxss";
+
+swiper {
+      height: auto;
+}
+
+.swiper {
+      width: 100%;
+      border-radius: 20rpx;
+      overflow: hidden;
+}

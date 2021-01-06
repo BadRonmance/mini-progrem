@@ -1,0 +1,72 @@
+/* components/form/form.wxss */
+@import "../../assets/css/public.wxss";
+
+.formPage{
+  /* padding: 0 20rpx; */
+}
+.formPage .formItem{
+  margin-bottom: 20rpx;
+  padding-bottom: 20rpx;
+}
+.formPage .label{
+  width: 200rpx;
+  margin-right: 20rpx;
+}
+.formPage .border{
+  border-bottom: 1rpx solid #ddd;
+}
+.formPage .border input,.formPage .noInput{
+  width: calc(100% - 60rpx);
+  padding: 0 0 10rpx 10rpx;
+  line-height: 24px;
+}
+/* .formPage input,.formPage .noInput{
+  padding: 0 0 10rpx 10rpx;
+} */
+.formPage .radio{
+  margin-right: 20rpx;
+}
+.formPage radio{
+  transform: scale(0.8);
+}
+.formPage checkbox{
+  transform: scale(0.8);
+}
+.formPage .img_icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+.formPage .verificationCode{
+  background: #49B982;
+  padding: 10rpx 20rpx;
+  color: #fff;
+  border-radius: 30rpx;
+}
+.formPage .registerBox{
+  margin-bottom: 40rpx;
+}
+.formPage .register{
+  transform: scale(0.5);
+}
+.formPage .textarea{
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+  width: 100%;
+  min-height: 100rpx;
+  border: 1rpx solid #ddd;
+}
+.formPage .regionArea{
+  z-index: 100;
+  left: 0;
+}
+.formPage .areaShow{
+  display: block;
+}
+.formPage .areaHidden{
+  display: none;
+}
+.formPage .pickerBox,.formPage .picker{
+  /* width: 100%;
+  height: 100%; */
+  line-height: 24px;
+}

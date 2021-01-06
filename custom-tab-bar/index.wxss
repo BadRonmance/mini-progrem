@@ -1,0 +1,53 @@
+@import "/assets/css/public.wxss";
+.tab-bar-box{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:152rpx;
+  background: transparent;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #101010;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
+  /* border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx; */
+  height: 98rpx;
+  display: flex;
+}
+.tab-bar-item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tab-bar-item cover-image {
+  width: 27px;
+  height: 27px;
+}
+
+.tab-bar-item cover-view {
+  font-size: 10px;
+}
+.logo{
+  position: absolute;
+  z-index: 10;
+  bottom: 8rpx;
+  left: calc(50% - 72rpx);
+  width: 144rpx;
+  height: 144rpx;
+  border-radius: 50%;
+  background: #101010;
+  border: 4rpx solid #FFFFFF;
+}
+.logo .img{
+  width: 100rpx;
+  height: 106rpx;
+}

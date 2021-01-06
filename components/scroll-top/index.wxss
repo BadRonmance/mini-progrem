@@ -1,0 +1,17 @@
+/* components/scroll-top/index.wxss */
+@import "../../assets/css/public.wxss";
+@import "../../assets/css/iconfont.wxss";
+
+.scroll_top {
+      position: fixed;
+      right: 40rpx;
+      bottom: 10vh;
+      background: orange;
+      height: 80rpx;
+      width: 80rpx;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 80rpx;
+      color: #fff;
+      z-index: 10000;
+}

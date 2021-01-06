@@ -1,0 +1,3 @@
+<view class="scroll_top" catchtap="goTop">
+      <text class="iconfont icondingbu fon_30"></text>
+</view>

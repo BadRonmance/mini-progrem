@@ -1,0 +1,17 @@
+<view class="upload">
+  <!-- <block wx:for="{{imgVal}}" wx:key="*this">
+    <image src="{{item.vlaue?item.vlaue:item.notIcon}}" style="width:{{item.width}};height:{{item.height}}"></image>
+    <input accept="image/*" name="file" type="file" class="ab wid-hei"/>
+  </block> -->
+  <van-uploader
+    file-list="{{ imgVal.imgs }}"
+    deletable="{{ true }}"
+    max-count="{{imgVal.limit}}"
+    accept="image"
+    bind:after-read="afterRead"
+    bind:delete="delete"
+  />
+
+  <!-- use-before-read
+    bind:before-read="beforeRead" -->
+</view>
