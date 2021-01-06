@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "swiper": "../../components/swiper/index",
+    "ebring-form": "../../components/form/index",
+    "infomation-list": "../../components/infomation-list/index"
+  },
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,8 @@
+<view id="mechanismAuthentication" class="rel">
+  <ebring-form form-data="{{formData}}" bindformSubmit="formSubmit"></ebring-form>
+  <van-transition custom-class="secondBox" name="slide-right" show="{{ show }}">
+    <view class="second">
+      <view bindtap="backOne">返回</view>
+    </view>
+  </van-transition>
+</view>

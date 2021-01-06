@@ -1,0 +1,16 @@
+.secondBox{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background: #49B982;
+}
+.second{
+  /* width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background: #49B982; */
+}

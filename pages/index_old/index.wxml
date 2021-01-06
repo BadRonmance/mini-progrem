@@ -1,0 +1,18 @@
+<!-- <custom-header></custom-header> -->
+<view class="pa_lr-18 mar_t-18">
+	<block wx:for="{{pageData}}" wx:key="*this">
+		<view wx:if="{{item.name==='swiper'}}">
+			<swiper height="{{item.height}}" system="{{item.system}}" data="{{item.swiperData}}" id="{{item.id}}">
+			</swiper>
+		</view>
+		<view wx:if="{{item.name==='ebringForm'}}">
+			<ebring-form id="{{item.id}}" form-data="{{formData}}" bindformSubmit="formSubmit"></ebring-form>
+		</view>
+		<view wx:if="{{item.name==='infomationList'}}">
+			<infomation-list id="{{item.id}}"></infomation-list>
+		</view>
+		<block wx:if="{{item.name==='scrollTop'&&scrollTopShow}}">
+			<scroll-top></scroll-top>
+		</block>
+	</block>
+</view>
