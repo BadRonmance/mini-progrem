@@ -1,4 +1,8 @@
 {
-  "navigationBarTitleText": "FIBR中国数字平台",
-  "usingComponents": {}
+  "navigationBarTitleText": "FIBR中国数字化平台",
+  "navigationBarTextStyle":"white",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "swiper": "../../components/swiper/index"
+  }
 }

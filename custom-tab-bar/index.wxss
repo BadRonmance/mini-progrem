@@ -5,7 +5,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 162rpx;
+  /* height: 162rpx; */
+  height: 152rpx;
   background: transparent;
   padding-bottom: env(safe-area-inset-bottom);
 }
@@ -19,9 +20,8 @@
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
   border-top-left-radius: 20rpx;
   border-top-right-radius: 20rpx;
-  /* border-top-left-radius: 20rpx;
-  border-top-right-radius: 20rpx; */
-  height: 128rpx;
+  /* height: 128rpx; */
+  height: 98rpx;
   display: flex;
 }
 
@@ -46,7 +46,8 @@
 .logo {
   position: absolute;
   z-index: 10;
-  bottom: 23rpx;
+  bottom: 8rpx;
+  /* bottom: 23rpx; */
   left: calc(50% - 72rpx);
   width: 144rpx;
   height: 144rpx;
