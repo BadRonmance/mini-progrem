@@ -3,10 +3,11 @@
 @import "../../assets/css/iconfont.wxss";
 
 .header {
-      text-align: center;
       font-size: 32rpx;
       /* font-weight: bold; */
       color: #333;
+      width: calc(100vw - 60rpx);
+      margin-left: 30rpx;
       text-overflow: ellipsis;
 }
 

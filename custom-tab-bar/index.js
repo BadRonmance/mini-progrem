@@ -4,8 +4,7 @@ Component({
     "backgroundColor": "#101010",
     "color": "#fff",
     "selectedColor": "#E3BF68",
-    "list": [
-      {
+    "list": [{
         "pagePath": "/pages/index/index",
         "iconPath": "/assets/images/tabbar/home-n.png",
         "selectedIconPath": "/assets/images/tabbar/home-l.png",
@@ -19,14 +18,14 @@ Component({
       }
     ]
   },
-  attached() {
-    console.log("11111111")
-  },
+  attached() {},
   methods: {
     switchTab(e) {
       const data = e.currentTarget.dataset
       const url = data.path
-      wx.switchTab({url})
+      wx.switchTab({
+        url
+      })
       this.setData({
         selected: data.index
       })

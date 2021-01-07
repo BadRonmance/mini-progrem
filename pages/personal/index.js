@@ -1,11 +1,17 @@
 // pages/personal/index.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    navbarHeight: app.globalData.customHeight + 'px',
+    style: {
+      lineText: "FIBR中国数字平台",
+      background: "#101010",
+      textColor: "#fff"
+    }
   },
 
   /**
@@ -28,9 +34,9 @@ Page({
   onShow: function () {
     if (typeof this.getTabBar === 'function' &&
       this.getTabBar()) {
-        this.getTabBar().setData({
-          selected: 1
-        })
+      this.getTabBar().setData({
+        selected: 1
+      })
     }
   },
 

@@ -9,7 +9,8 @@ Component({
                   type: Object,
                   value: {
                         background: "#fff",
-                        lineText: "首页"
+                        lineText: "首页",
+                        textColor: "#fff"
                   }
             }
       },
@@ -20,6 +21,7 @@ Component({
       data: {
             height: app.globalData.height + 'px',
             statusBarHeight: app.globalData.statusBarHeight + 'px',
+            textAlign: wx.getSystemInfoSync().system.indexOf("iOS") !== -1 ? 't_c' : 't_l',
             navbarType: {
                   type: "0",
                   iconList: [
@@ -33,7 +35,6 @@ Component({
             this.setHeight()
       },
       attached() {
-            console.log(wx.util.pageTest())
             this.data.navbarType.type = wx.util.pageTest().type
             this.setData({
                   navbarType: this.data.navbarType
@@ -47,7 +48,6 @@ Component({
                   this.setData({
                         height: app.globalData.height + 'px'
                   })
-                  console.log(app.globalData.height)
             },
             navbarPage() {
                   let type = this.data.navbarType.type

@@ -1,2 +1,5 @@
-<!--pages/personal/index.wxml-->
-<text>pages/personal/index.wxml</text>
+<custom-head style="{{style}}"></custom-head>
+<!-- style="padding-top:{{navbarHeight}}" -->
+<view class="personal">
+      123
+</view>
