@@ -1,0 +1,2 @@
+<text wx:if="{{!isImageName}}" class="{{name}}"></text>
+<image wx:else></image>

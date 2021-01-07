@@ -85,6 +85,10 @@
 }
 
 
+.mar_t-10 {
+      margin-top: 10rpx;
+}
+
 .mar_t-18 {
       margin-top: 18rpx;
 }
@@ -248,6 +252,10 @@
       color: #eee;
 }
 
+.color_e3 {
+      color: #E3BF68;
+}
+
 .color_f9 {
       color: #f9f9f9;
 }
@@ -264,9 +272,17 @@
       color: #D0D0D0;
 }
 
+.color_d2 {
+      color: #D2D2D2;
+}
+
 
 .color_0 {
       color: #000;
+}
+
+.color_10 {
+      color: #101010;
 }
 
 .color_3 {
@@ -281,7 +297,7 @@
       color: #999;
 }
 
-.color_red{
+.color_red {
       color: #f00;
 }
 
@@ -758,6 +774,6 @@
       opacity: 0.1;
 }
 
-.borderBox{
+.borderBox {
       box-sizing: border-box;
 }

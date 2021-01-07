@@ -1,5 +1,8 @@
 {
   "usingComponents": {
+    "custom-head": "../../components/custom-header/index",
     "ebring-form": "../../components/form/index"
-  }
+  },
+  "navigationBarTextStyle": "white",
+  "navigationStyle": "custom"
 }

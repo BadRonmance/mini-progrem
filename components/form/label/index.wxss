@@ -1,0 +1,6 @@
+/* components/form/label/index.wxss */
+@import "../../../assets/css/public.wxss";
+
+.from_label_requireIcon {
+      padding-right: 10rpx;
+}

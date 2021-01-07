@@ -39,7 +39,7 @@ App({
             }
         })
     },
-    onShow(){
+    onShow() {
         // qqmapsdk = new QQMapWX({
         //     key: 'GWGBZ-S3PHW-YOQRW-OEEQF-CA5C5-DJB64' //这里自己的key秘钥进行填充
         // });      
@@ -48,57 +48,57 @@ App({
     /**
      * 获取用户信息
      */
-    getUserLocation(){
+    getUserLocation() {
         var that = this;
         wx.getSetting({
-          success: (res) => {
-            if (res.authSetting['scope.userLocation'] != undefined && res.authSetting['scope.userLocation'] != true) {
-                wx.openSetting({
-                    success: (dataAu) => {
-                        if (dataAu.authSetting["scope.userLocation"] == true) {
-                            that.toast('授权成功');
-                        } else {
-                            that.toast('授权失败');
+            success: (res) => {
+                if (res.authSetting['scope.userLocation'] != undefined && res.authSetting['scope.userLocation'] != true) {
+                    wx.openSetting({
+                        success: (dataAu) => {
+                            if (dataAu.authSetting["scope.userLocation"] == true) {
+                                that.toast('授权成功');
+                            } else {
+                                that.toast('授权失败');
+                                that._getCityLocation()
+                            }
+                        },
+                        fail: (error) => {
                             that._getCityLocation()
                         }
-                    },
-                    fail: (error) => {
-                        that._getCityLocation()
-                    }
-                })
-            } else {
+                    })
+                } else {
+                    that._getCityLocation()
+                }
+            },
+            fail: (error) => {
+                // console.log(error)
                 that._getCityLocation()
             }
-          },
-          fail: (error) => {
-            // console.log(error)
-            that._getCityLocation()
-          }
         })
     },
-    _getCityLocation(){
+    _getCityLocation() {
         var that = this;
         wx.getLocation({
-          type: 'wgx84',
-          success: (res) => {
-            qqmapsdk.reverseGeocoder({
-                location: {
-                    latitude: res.latitude,
-                    longitude: res.longitude
-                },
-                success: function (res) {
-                    console.log(res.result.ad_info.city)
-                    that.globalData.city = res.result.ad_info.city;
-                },
-                fail: function (res) {
-                    // console.log(res);
-                }
-            })
-          },
-          fail: (error) => {
-            //   console.log(error)
-            that.toast('获取失败,用户取消')
-          }
+            type: 'wgx84',
+            success: (res) => {
+                qqmapsdk.reverseGeocoder({
+                    location: {
+                        latitude: res.latitude,
+                        longitude: res.longitude
+                    },
+                    success: function (res) {
+                        console.log(res.result.ad_info.city)
+                        that.globalData.city = res.result.ad_info.city;
+                    },
+                    fail: function (res) {
+                        // console.log(res);
+                    }
+                })
+            },
+            fail: (error) => {
+                //   console.log(error)
+                that.toast('获取失败,用户取消')
+            }
         })
     },
     /**
@@ -244,6 +244,15 @@ App({
         })
     },
     globalData: {
-        height: 0
+        height: 0,
+        userIdentity: {
+            0: '游客',
+            1: '普通用户',
+            2: '教练员',
+            3: '推广员',
+            4: '运动员',
+            5: '讲师',
+            6: '培训机构'
+        },
     }
 })

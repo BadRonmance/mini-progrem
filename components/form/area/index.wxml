@@ -1,0 +1,1 @@
+<van-area class="area_picker" area-list="{{ areaList }}" />
