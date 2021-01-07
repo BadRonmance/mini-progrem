@@ -14,7 +14,7 @@
             "coverView": true,
             "nodeModules": true,
             "autoAudits": false,
-            "showShadowRootInWxmlPanel": true,
+            "showShadowRootInWxmlPanel": false,
             "scopeDataCheck": false,
             "uglifyFileName": false,
             "checkInvalidKey": true,
@@ -63,6 +63,12 @@
                         {
                               "name": "我的",
                               "pathName": "pages/personal/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "name": "登录",
+                              "pathName": "pages/login/index",
                               "query": "",
                               "scene": null
                         }

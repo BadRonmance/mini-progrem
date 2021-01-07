@@ -29,6 +29,14 @@ Component({
                         "../../assets/images/icon/back-home.png",
                         "../../assets/images/icon/back.png",
                   ]
+            },
+            navbarTypeWhite: {
+                  type: "0",
+                  iconList: [
+                        "",
+                        "../../assets/images/icon/back_white.png",
+                        "../../assets/images/icon/back_white.png"
+                  ]
             }
       },
       created() {

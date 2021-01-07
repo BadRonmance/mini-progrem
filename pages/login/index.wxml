@@ -1,7 +1,7 @@
 <view id="login" class="pa_18">
-  <ebring-form form-data="{{formData}}" bindformSubmit="formSubmit"></ebring-form>
-  <view class="tip flex flex-bet">
-    <view><navigator url="../forgetPassword/index">忘记密码</navigator></view>
-    <view><navigator url="../register/index">新用户注册</navigator></view>
-  </view>
+    <custom-head style="{{style}}"></custom-head>
+    <view style="margin-top:{{navbarHeight}}">
+        <ebring-form form-data="{{formData}}"></ebring-form>
+    </view>
 </view>
+<image class="bg_img" src="{{bgImg}}"></image>

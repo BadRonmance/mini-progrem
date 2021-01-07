@@ -1,9 +1,13 @@
 <view class="custom_header" style="background:{{style.background}}">
       <view class="statusBarHeight" style="height:{{statusBarHeight}};"></view>
-      <view class="header rel {{textAlign}}" style="height:{{height}}">
-            <text class="header_text" style="color:{{style.textColor}}">{{style.lineText}}</text>
-            <view catchtap="navbarPage" class="ab t_c left_btn color_f fon_40" wx:if="{{navbarType.type!=='0'}}">
-                  <image class="icon transform_center" src="{{navbarType.iconList[navbarType.type]}}"></image>
+      <view class="header rel {{textAlign}}" style="height:{{height}}"  catchtap="navbarPage">
+            <view class="ab t_c left_btn color_f fon_40" wx:if="{{navbarType.type!=='0'}}">
+                  <image class="icon transform_center" wx:if="{{style.theme!=='white'}}"
+                        src="{{navbarType.iconList[navbarType.type]}}"></image>
+                  <image class="icon transform_center" wx:else src="{{navbarTypeWhite.iconList[navbarType.type]}}">
+                  </image>
             </view>
+            <text class="header_text"
+                  style="color:{{style.textColor}};margin-left:{{navbarType.type!=='0'?'80rpx':''}}">{{style.lineText}}</text>
       </view>
 </view>

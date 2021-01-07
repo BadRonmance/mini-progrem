@@ -1,6 +1,8 @@
 {
   "component": true,
   "usingComponents": {
-    "ebring-upload-img": "../upload-img/index"
+    "ebring-upload-img": "../upload-img/index",
+    "form-label": "./label/index",
+    "form-area": "./area/index"
   }
 }

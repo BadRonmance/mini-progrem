@@ -1,5 +1,68 @@
 /* pages/personal/index.wxss */
-.personal{
-      background: red;
+page {
+      background: #fff;
+}
+
+.personal {
       height: 100vh;
+}
+
+.user {
+      height: 400rpx;
+      padding: 34rpx 18rpx 0 18rpx;
+      background: #101010;
+}
+
+.user .userInfo {
+      height: 110rpx;
+      transform: translateY(30rpx);
+}
+
+.user .userInfo .user_logo {
+      height: 110rpx;
+      width: 110rpx;
+      border-radius: 50%;
+      overflow: hidden;
+}
+
+.user .user_identity {
+      height: 144rpx;
+      transform: translateY(108rpx);
+      background: olivedrab;
+      overflow: hidden;
+      border-top-left-radius: 20rpx;
+      border-top-right-radius: 20rpx;
+}
+
+.user_identity_body {
+      height: 114rpx;
+}
+
+.user .user_identity .user_title {
+      border-right: 2rpx solid #e5e5e5;
+      padding: 0 40rpx;
+}
+
+.user .user_identity .title_list {
+      height: 100%;
+      background: orange;
+}
+
+.btn_list {
+      border-top-left-radius: 20rpx;
+      border-top-right-radius: 20rpx;
+      transform: translateY(-40rpx);
+      padding-top: 40rpx;
+      overflow: hidden;
+      transition: all 1s;
+      background: #fff;
+}
+
+.van-grid-item__icon+.van-grid-item__text {
+      padding-top: 10rpx;
+      color: #666666;
+}
+
+.van-grid-item__content {
+      padding: var(--grid-item-content-padding, 8px 8px) !important;
 }

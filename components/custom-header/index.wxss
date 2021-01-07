@@ -4,14 +4,16 @@
 
 .header {
       font-size: 32rpx;
-      /* font-weight: bold; */
       color: #333;
       width: calc(100vw - 60rpx);
       margin-left: 30rpx;
       text-overflow: ellipsis;
 }
 
+.header_text {}
+
 .header_text::before {
+      padding-top: 8rpx;
       display: inline-block;
       content: "";
       height: 100%;

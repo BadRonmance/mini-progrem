@@ -1,7 +1,10 @@
 {
   "usingComponents": {
-    "custom-head": "../../components/custom-header/index"
+    "custom-head": "../../components/custom-header/index",
+    "van-transition": "@vant/weapp/transition/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index"
   },
-  "navigationBarTextStyle":"white",
-  "navigationStyle":"custom"
+  "navigationBarTextStyle": "white",
+  "navigationStyle": "custom"
 }

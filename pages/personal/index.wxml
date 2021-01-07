@@ -1,5 +1,47 @@
 <custom-head style="{{style}}"></custom-head>
-<!-- style="padding-top:{{navbarHeight}}" -->
-<view class="personal">
-      123
+<view class="personal" style="padding-top:{{navbarHeight}}">
+      <van-transition show="{{ show }}" name="fade">
+            <view class="user" bindtap="toLogin">
+                  <view class="userInfo flex">
+                        <view class="flex-grow-1">
+                              <view class="user_logo dis_in_center">
+                                    <open-data type="userAvatarUrl"></open-data>
+                              </view>
+                              <view class="dis_in_center mar_l-18">
+                                    <open-data class="fon_38 color_f" type="userNickName"></open-data>
+                                    <view class="fon_24 color_d2 mar_t-10">
+                                          ID:12365478
+                                    </view>
+                              </view>
+                        </view>
+                        <view class="flex-grow-0 color_e3 fon_26">
+                              <text>编辑</text>
+                        </view>
+                  </view>
+                  <view class="user_identity">
+                        <view class="flex user_identity_body">
+                              <view class="flex-grow-0 flex-y-center">
+                                    <view class="user_title t_c">
+                                          <view class="fon_26 fon_wei color_0">我的头衔</view>
+                                          <view class="fon_18 flex color_10">
+                                                <text class="flex-grow-1 t_l">MY</text>
+                                                <text class="flex-grow-0">TITLE</text>
+                                          </view>
+                                    </view>
+                              </view>
+                              <view class="flex-grow-1 title_list">
+                                    123
+                              </view>
+                        </view>
+                  </view>
+            </view>
+      </van-transition>
+      <view class="btn_list">
+            <van-grid border="{{false}}" icon-size="50px">
+                  <van-grid-item
+                        icon="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.3fantizi.com%2Farticle%2Fpic%2F20130422001d.jpg&refer=http%3A%2F%2Fwww.3fantizi.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612591334&t=f018f9287a8f62aed0c8b7cbd52b4d18"
+                        text="{{item.name}}" wx:for="{{userBtnList}}">
+                  </van-grid-item>
+            </van-grid>
+      </view>
 </view>
