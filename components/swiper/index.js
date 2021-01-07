@@ -28,10 +28,10 @@ Component({
        * 组件的初始数据
        */
       data: {
-            swiperData: []
+            swiperData: [{advertising:{ content: '../../assets/images/index/banner.png'}}]
       },
       created() {
-            this.getData()
+            // this.getData()
       },
       /**
        * 组件的方法列表

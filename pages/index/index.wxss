@@ -1,1 +1,103 @@
 /* pages/index/index.wxss */
+.home{
+  padding-bottom: 155rpx;
+}
+.titleBox{
+  height: 430rpx;
+  padding: 0 36rpx;
+  background: linear-gradient(360deg, #070707 0%, #1A1A1A 100%);
+}
+.title{
+  /* padding-top: 142rpx; */
+  margin-bottom: 28rpx;
+}
+.logo{
+  width: 114rpx;
+  height: 62rpx;
+}
+.address{
+  color: #E3BF68;
+  margin-left: 23rpx;
+}
+.address image{
+  width: 16rpx;
+  height: 21.8rpx;
+  margin-right: 8rpx;
+}
+.certificate{
+  width: 178rpx;
+  height: 48rpx;
+}
+.navBox{
+  margin-top: 141rpx;
+  /* transform: translateY(141rpx); */
+  padding: 0 55rpx;
+}
+.navBox .item image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.levelExaminate{
+  padding: 0 0 0 36rpx;
+  margin-top: 52rpx;
+  /* transform: translateY(193rpx); */
+}
+.navTitle{
+  color: #101010;
+  margin-bottom: 27rpx;
+  padding-right: 36rpx;
+}
+.navTitle image{
+  width: 25.82rpx;
+  height: 25.98rpx;
+}
+.navTitle .title_border{
+  bottom: -1rpx;
+  left: 0;
+  display: inline-block;
+  width: 29rpx;
+  height: 4rpx;
+  background: #E3BF68;
+  border-radius: 2px;
+}
+.cont{
+  white-space: nowrap;
+  overflow-x:scroll;
+}
+.cont .item{
+  width: 310rpx;
+  height: 190rpx;
+  display: inline-block;
+  margin-right: 14rpx;
+  box-shadow: 3rpx 3rpx 20rpx rgba(20, 19, 26, 0.56);
+  border-radius: 8rpx;
+}
+.cont .item>view{
+  z-index: 10;
+  padding: 18rpx 14rpx 12rpx;
+}
+.cont .item .address{
+  color: #fff;
+  margin-left: 0;
+}
+.cont .item .name{
+  margin-top: 34rpx;
+  margin-bottom: 10rpx;
+}
+
+.vanTab{
+  padding: 0 36rpx;
+}
+.vanTabnav .van-tab{
+  flex: none !important;
+  font-size: 30rpx;
+  color: #999 !important;
+}
+.vanTabnav .van-tabs__line {
+
+}
+.vanTabnav .van-tab--active {
+  color: #101010 !important;
+  font-size: 38rpx;
+  font-weight: bold;
+}

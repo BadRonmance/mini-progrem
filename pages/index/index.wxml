@@ -1,4 +1,75 @@
 <!--pages/index/index.wxml-->
-<view>
-  <text>首页</text>
+<view class="home fon_28">
+  <view class="titleBox">
+    <custom-header style="{{style}}"></custom-header>
+    <view class="flex-bet title" style="padding-top:{{titleHeight}}">
+      <view class="flex flex-bet">
+        <image class="logo" src="../../assets/images/index/home-logo.png"></image>
+        <view class="address">
+          <image src="../../assets/images/index/address.png"></image>
+          西安
+        </view>
+      </view>
+      <image class="certificate" src="../../assets/images/index/certificate.png" data-path="证书查询path" bindtap="jumpPath"></image>
+    </view>
+    <swiper height="{{banner.height}}" system="{{banner.system}}" data="{{banner.swiperData}}" id="banner">
+		</swiper>
+  </view>
+  <!-- nav导航 -->
+  <view class="navBox flex-bet color_3">
+    <view class="item t_c" wx:for="{{navData}}" wx:key="index" data-path="{{item.path}}" bindtap="jumpPath">
+      <image src="{{item.src}}"></image>
+      <view>{{item.title}}</view>
+    </view>
+  </view>
+  <!-- 考级 -->
+  <view class="levelExaminate">
+    <view class="navTitle flex-bet rel">
+      <view class="fon_38 fon_wei">考级<text class="title_border ab"></text></view>
+      <image src="../../assets/images/index/more.png"></image>
+    </view>
+    <view class="cont">
+      <view class="item rel color_f" wx:for="{{levelExaminateList}}" wx:key="id">
+        <image class="wid hei ab" src="../../assets/images/index/levelBagk.png"></image>
+        <view class="wid hei ab">
+          <view class="address flex-y-center fon_34 gobyndsingle">
+            <image src="../../assets/images/index/address1.png"></image>
+            {{item.city}}
+          </view>
+          <view class="name gobyndsingle">{{item.name}}</view>
+          <view class="fon_20">{{item.time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 培训 -->
+  <view class="levelExaminate">
+    <view class="navTitle flex-bet rel">
+      <view class="fon_38 fon_wei">培训<text class="title_border ab"></text></view>
+      <image src="../../assets/images/index/more.png"></image>
+    </view>
+    <view class="cont">
+      <view class="item rel color_f" wx:for="{{levelExaminateList}}" wx:key="id">
+        <image class="wid hei ab" src="../../assets/images/index/trainBack.png"></image>
+        <view class="wid hei ab">
+          <view class="address flex-y-center fon_34 gobyndsingle">
+            <image src="../../assets/images/index/address1.png"></image>
+            {{item.city}}
+          </view>
+          <view class="name gobyndsingle">{{item.name}}</view>
+          <view class="fon_20">{{item.time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 云客互联-名帅视界 -->
+  <van-tabs swipeable color="#E3BF68" line-width="29rpx" line-height="4rpx" custom-class="vanTab" nav-class="vanTabnav">
+    <van-tab title="云客互联">
+      <view>云客互联</view>    
+    </van-tab>
+    <van-tab title="名帅视界">
+      名帅视界
+    </van-tab>
+  </van-tabs>
+
 </view>

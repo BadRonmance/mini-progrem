@@ -21,7 +21,9 @@
     "van-area": "@vant/weapp/area/index",
     "van-uploader": "@vant/weapp/uploader/index",
     "van-transition": "@vant/weapp/transition/index",
-    "van-datetime-picker": "@vant/weapp/datetime-picker/index"
+    "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
   },
   "permission": {
     "scope.userLocation": {
@@ -39,14 +41,14 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "/assets/images/tabbar/home-n.png",
-        "selectedIconPath": "/assets/images/tabbar/home-l.png",
+        "iconPath": "/assets/images/tabbar/index.png",
+        "selectedIconPath": "/assets/images/tabbar/index.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/personal/index",
-        "iconPath": "/assets/images/tabbar/member-n.png",
-        "selectedIconPath": "/assets/images/tabbar/member-l.png",
+        "iconPath": "/assets/images/tabbar/person.png",
+        "selectedIconPath": "/assets/images/tabbar/person.png",
         "text": "我的"
       }
     ]

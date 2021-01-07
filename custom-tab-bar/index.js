@@ -4,16 +4,17 @@ Component({
     "backgroundColor": "#101010",
     "color": "#fff",
     "selectedColor": "#E3BF68",
-    "list": [{
+    "list": [
+      {
         "pagePath": "/pages/index/index",
-        "iconPath": "/assets/images/tabbar/home-n.png",
-        "selectedIconPath": "/assets/images/tabbar/home-l.png",
+        "iconPath": "/assets/images/tabbar/index.png",
+        "selectedIconPath": "/assets/images/tabbar/index.png",
         "text": "首页"
       },
       {
         "pagePath": "/pages/personal/index",
-        "iconPath": "/assets/images/tabbar/member-n.png",
-        "selectedIconPath": "/assets/images/tabbar/member-l.png",
+        "iconPath": "/assets/images/tabbar/person.png",
+        "selectedIconPath": "/assets/images/tabbar/person.png",
         "text": "我的"
       }
     ]
