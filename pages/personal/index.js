@@ -13,15 +13,6 @@ Page({
             textColor: "#fff"
         },
         show: false,
-        userIdentity: {
-            0: '游客',
-            1: '普通用户',
-            2: '教练员',
-            3: '推广员',
-            4: '运动员',
-            5: '讲师',
-            6: '培训机构'
-        },
         userBtnList: [{
             name: "身份认证",
             type: ['1', '2', '3', '4'],
@@ -74,7 +65,8 @@ Page({
             name: "设置",
             type: ['0', '1', '2', '3', '4', '5', '6'],
             icon: ""
-        }]
+        }],
+        btnList:[]
     },
 
     /**
@@ -82,15 +74,26 @@ Page({
      */
     onLoad: function (options) {
         let that = this
+        let userType = 5
+        let result = []
+        this.data.userBtnList.map(item => {
+            if (item.type.findIndex(val => val == userType) !== -1) {
+                result.push(item)
+            }
+        })
+        console.log(result)
+        that.setData({
+            btnList: result
+        })
         setTimeout(() => {
             that.setData({
                 show: true
             })
         }, 300)
     },
-    toLogin(){
+    toLogin() {
         wx.navigateTo({
-          url: '/pages/login/index',
+            url: '/pages/login/index',
         })
     },
     /**

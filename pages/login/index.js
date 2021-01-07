@@ -10,17 +10,17 @@ Page({
             lineText: "FIBR中国数字平台",
             background: "",
             textColor: "#fff",
-            theme:"white"
+            theme: "white"
         },
         bgImg: "http://jsl-xiehui.oss-cn-qingdao.aliyuncs.com/test/png/9c00654b-4a97-4ffe-8580-f7209bcc6802.png",
         formData: [{
             id: "1",
-            isRequire: true,
+            isRequire: false,
             isDisabled: false,
             type: "input",
             prop: "userName",
-            labelIcon: true,
-            label: "iconfont iconzhanghao fon_40 color_f",
+            labelIcon: false,
+            label: "账号",
             icon: "iconfont iconzhanghao",
             value: "",
             placeholder: "这是提示"

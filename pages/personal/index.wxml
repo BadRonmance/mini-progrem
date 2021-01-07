@@ -40,7 +40,7 @@
             <van-grid border="{{false}}" icon-size="50px">
                   <van-grid-item
                         icon="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.3fantizi.com%2Farticle%2Fpic%2F20130422001d.jpg&refer=http%3A%2F%2Fwww.3fantizi.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612591334&t=f018f9287a8f62aed0c8b7cbd52b4d18"
-                        text="{{item.name}}" wx:for="{{userBtnList}}">
+                        text="{{item.name}}" wx:for="{{btnList}}">
                   </van-grid-item>
             </van-grid>
       </view>
