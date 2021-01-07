@@ -4,4 +4,4 @@
         <ebring-form form-data="{{formData}}"></ebring-form>
     </view>
 </view>
-<image class="bg_img" src="{{bgImg}}"></image>
+<image class="bg_img" src="{{bgImg}}" mode="widthFix"></image>
