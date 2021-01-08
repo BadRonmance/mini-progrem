@@ -232,7 +232,6 @@ Page({
         console.log(data.detail)
     },
     onPageScroll(ev) {
-
         this.data.style.background = ev.scrollTop > 0 ? '#070707' : ''
         this.setData({
             style: this.data.style

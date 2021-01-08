@@ -25,10 +25,10 @@
     </view>
     <!-- 考级 -->
     <view class="levelExaminate">
-        <view-title system="{{levelTitle}}"></view-title>
-        <view class="cont">
-            <card-item data="{{levelExaminateData}}"></card-item>
-        </view>
+      <view-title system="{{levelTitle}}"></view-title>
+      <view class="cont">
+        <card-item data="{{levelExaminateData}}"></card-item>
+      </view>
     </view>
     <!-- 培训 -->
     <view class="levelExaminate trainBox">
