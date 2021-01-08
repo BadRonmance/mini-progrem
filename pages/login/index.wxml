@@ -1,7 +1,7 @@
 <view id="login" class="pa_18">
     <custom-head style="{{style}}"></custom-head>
     <view style="margin-top:{{navbarHeight}}">
-        <ebring-form form-data="{{formData}}"></ebring-form>
+        <ebring-form formStyle="{{formStyle}}" labelStyle="{{labelStyle}}" formData="{{formData}}"></ebring-form>
     </view>
 </view>
 <image class="bg_img" src="{{bgImg}}" mode="widthFix"></image>

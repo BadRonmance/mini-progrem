@@ -1,0 +1,6 @@
+@import "../../../assets/css/public.wxss";
+
+.textarea {
+      line-height: 30rpx;
+      min-height: 200rpx;
+}

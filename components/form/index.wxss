@@ -3,11 +3,9 @@
 
 .from_label {
   height: 50rpx;
-  width: 140rpx;
 }
 
 .formItem {
-  background: orange;
   padding: 20rpx 0;
   border-bottom:2rpx solid #e5e5e5;
 }

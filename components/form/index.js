@@ -4,39 +4,50 @@ Component({
         multipleSlots: true
     },
     properties: {
-        formData: {
+        labelStyle: {
             type: Object,
             value: {
-                data: [{
-                    id: "id",
-                    isRequire: '是否必填',
-                    isDisabled: '是否禁止输入',
-                    type: "类型",
-                    prop: "表单元素字段",
-                    label: "label",
-                    value: "值",
-                    text: '下拉选择回填文字',
-                    placeholder: "请上传营业执照",
-                    limit: "上传图片限制",
-                    imgs: [{
-                        url: '图片回显地址'
-                    }],
-                    ruleData: {
-                        reg: "校验规则",
-                        message: "提示信息",
-                    },
-                }]
+                align: "t_l",
             }
+        },
+        formStyle: {
+            type: Object,
+            observer: function (val) {
+                let result = []
+                Object.entries(val).map(item => {
+                    result.push(`${item[0]}:${item[1]}`)
+                })
+                this.setData({
+                    formItemStyle: result.join(";")
+                });
+            },
+        },
+        formData: {
+            type: Array,
+            value: []
         }
     },
     data: {
-
+        formItemStyle: "",
+        formDataCopy: []
+    },
+    attached() {
+        let result = {}
+        this.data.formData.map(item => {
+            result[item.prop] = item.value
+        })
+        console.log(result)
+        this.setData({
+            formDataCopy: result
+        })
     },
     created() {},
     ready() {},
     methods: {
-        formSubmit(e){
-            console.log(e)
+        changeValue(e) {
+            let data = e.detail
+            this.data.formDataCopy[data.prop] = data.value
+            console.log(this.data.formDataCopy)
         }
     }
 })

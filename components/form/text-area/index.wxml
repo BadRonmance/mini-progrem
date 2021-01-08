@@ -1,0 +1,4 @@
+<textarea class="textarea" maxlength="{{data.maxlength}}" type="{{data.inputType}}" name="{{data.prop}}"
+      auto-height="{{true}}" disabled="{{data.isDisabled}}" value="{{data.value}}" placeholder="{{data.placeholder}}"
+      placeholder-style="color:{{labelStyle.placeholderColor}}" bindinput="bindinput">
+                </textarea>

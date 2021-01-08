@@ -4,11 +4,21 @@ Component({
        * 组件的属性列表
        */
       properties: {
+            labelStyle: {
+                  type: Object,
+                  value: {
+                        align: "t_l",
+                  }
+            },
             isRequire: {
                   type: Boolean,
                   type: false
             },
             label: {
+                  type: String,
+                  type: ''
+            },
+            icon: {
                   type: String,
                   type: ''
             },

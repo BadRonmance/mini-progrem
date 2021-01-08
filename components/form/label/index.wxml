@@ -1,4 +1,4 @@
-<view class="wid t_r" wx:if="{{!labelIcon}}">
+<view class="wid {{labelStyle.align}}" style="width:{{labelStyle.width}}" wx:if="{{!labelIcon}}">
       <view class="color_red fon_wei fon_30 from_label_requireIcon dis_in_center" wx:if="{{isRequire}}">
             ·
       </view>
@@ -6,6 +6,6 @@
             {{label}}：
       </view>
 </view>
-<view wx:else>
-      <form-icon name="{{label}}" />
+<view wx:else class="wid  {{labelStyle.align}}" style="width:{{labelStyle.width}}">
+      <form-icon name="{{icon}}" />
 </view>

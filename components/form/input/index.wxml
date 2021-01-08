@@ -1,0 +1,4 @@
+<input maxlength="{{data.maxlength}}" type="{{data.inputType}}" name="{{data.prop}}" disabled="{{data.isDisabled}}"
+      value="{{data.value}}" placeholder="{{data.placeholder}}"
+      placeholder-style="color:{{labelStyle.placeholderColor}}" bindinput="bindinput">
+</input>

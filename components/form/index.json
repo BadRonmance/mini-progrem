@@ -3,6 +3,8 @@
   "usingComponents": {
     "ebring-upload-img": "../upload-img/index",
     "form-label": "./label/index",
-    "form-area": "./area/index"
+    "form-area": "./area/index",
+    "form-input": "./input/index",
+    "form-textarea": "./text-area/index"
   }
 }
