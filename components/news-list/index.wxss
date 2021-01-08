@@ -1,0 +1,32 @@
+@import "../../assets/css/public.wxss";
+.news-item{
+  height: 158rpx;
+  margin-bottom: 29rpx;
+}
+.title{
+  padding-top: 10rpx;
+}
+.news-item .img{
+  width: 280rpx;
+  height: 157.5rpx;
+  margin-left: 22rpx;
+}
+.news-item .eyes{
+  width: 26rpx;
+  height: 18rpx;
+  margin-right: 5rpx;
+}
+.news-item .bottom{
+  color: #909299;
+  bottom: 10rpx;
+}
+.advent image{
+  width: 100%;
+  height: 154rpx;
+}
+.advent .icon{
+  width: 20rpx;
+  height: 20rpx;
+  right: 0;
+  top: 0;
+}

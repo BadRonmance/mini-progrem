@@ -36,7 +36,6 @@ Component({
         this.data.formData.map(item => {
             result[item.prop] = item.value
         })
-        console.log(result)
         this.setData({
             formDataCopy: result
         })
@@ -47,7 +46,6 @@ Component({
         changeValue(e) {
             let data = e.detail
             this.data.formDataCopy[data.prop] = data.value
-            console.log(this.data.formDataCopy)
         }
     }
 })

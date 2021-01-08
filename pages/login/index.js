@@ -40,7 +40,7 @@ Page({
             id: "2",
             isRequire: false,
             isDisabled: false,
-            type: "textArea",
+            type: "area",
             inputType: "text",
             prop: "userName1",
             labelIcon: true,

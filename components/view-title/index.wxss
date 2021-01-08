@@ -1,0 +1,25 @@
+/* components/view-title/index.wxss */
+@import "../../assets/css/public.wxss";
+.title_span {
+  text-decoration: none;
+  box-shadow: 0 4rpx #E3BF68;
+}
+.title_none {
+  box-shadow: none;
+}
+.label{
+  transition: all .4s;
+}
+.title_span_f {
+  text-decoration: none;
+  box-shadow: 0 4rpx #ffffff;
+}
+.sectionTitle{
+  height: 54rpx;
+  margin-bottom: 27rpx;
+  padding-right: 36rpx;
+}
+.sectionTitle .icon_you {
+  width: 25.82rpx;
+  height: 25.98rpx;
+}

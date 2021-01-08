@@ -1,0 +1,11 @@
+<block wx:for="{{classList}}" wx:key="id">
+  <view class="classItem rel" style="width:{{style.width}};margin-right:{{style.marginRight?style.marginRight:''}}">
+    <image mode="widthFix" src="{{item.src}}" class="wid"></image>
+    <view class="fon_26 hydlnr_2 pa9 name ab color_10">{{item.name}}</view>
+    <view class="flex-bet color_9 pa9 wid bottom fon_22">
+      <view>浏览量:{{item.num}}</view>
+      <view wx:if="{{item.isFree}}">免费</view>
+      <view wx:else class="color_red">¥{{item.price}}</view>
+    </view>
+  </view>
+</block>

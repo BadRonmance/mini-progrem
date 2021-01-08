@@ -6,7 +6,8 @@
     "pages/news/index",
     "pages/forgetPassword/index",
     "pages/register/index",
-    "pages/mechanismAuthentication/index"
+    "pages/mechanismAuthentication/index",
+    "components/class-list/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,7 +24,8 @@
     "van-transition": "@vant/weapp/transition/index",
     "van-datetime-picker": "@vant/weapp/datetime-picker/index",
     "van-tab": "@vant/weapp/tab/index",
-    "van-tabs": "@vant/weapp/tabs/index"
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-icon": "@vant/weapp/icon/index"
   },
   "permission": {
     "scope.userLocation": {
