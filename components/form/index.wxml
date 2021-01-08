@@ -2,17 +2,17 @@
     <block wx:for="{{formData}}" wx:key="*this">
         <view class="flex formItem" style="{{formItemStyle}}">
             <view class="flex-grow-0 from_label flex-y-center">
-                <form-label class="wid" icon="{{item.icon}}" labelStyle="{{labelStyle}}" labelIcon="{{item.labelIcon}}"
-                    isRequire="{{item.isRequire}}" label="{{item.label}}"></form-label>
+                <form-label class="wid" icon="{{item.icon}}" labelStyle="{{labelStyle}}" labelIcon="{{item.labelIcon}}" isRequire="{{item.isRequire}}" label="{{item.label}}"></form-label>
             </view>
-            <view class="flex-grow-1 flex-y-center {{labelStyle.contentColor}}">
-                <form-input wx:if="{{item.type=='input'}}" labelStyle="{{labelStyle}}" index="{{index}}" data="{{item}}"
-                    bind:changeValue="changeValue"></form-input>
-                <form-textarea wx:if="{{item.type=='textArea'}}" index="{{index}}" labelStyle="{{labelStyle}}"
-                    data="{{item}}" bind:changeValue="changeValue">
-                </form-textarea>
-
-                <form-area wx:if="{{item.type=='area'}}"></form-area>
+            <view class="flex-grow-1 flex flex-y-center {{labelStyle.contentColor}}">
+                <view class="flex-grow-1">
+                    <form-input wx:if="{{item.type=='input'}}" labelStyle="{{labelStyle}}" index="{{index}}" data="{{item}}" bind:changeValue="changeValue"></form-input>
+                    <form-textarea wx:if="{{item.type=='textArea'}}" index="{{index}}" labelStyle="{{labelStyle}}" data="{{item}}" bind:changeValue="changeValue"></form-textarea>
+                    <form-area wx:if="{{item.type=='area'}}"></form-area>
+                </view>
+                <view class="flex-grow-0 mar_l-18" wx:if="{{item.slot&&item.slot!=''}}">
+                    <slot name="{{item.slot}}"></slot>
+                </view>
             </view>
         </view>
     </block>

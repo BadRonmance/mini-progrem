@@ -1,0 +1,24 @@
+/* pages/login/index.wxss */
+
+@import "../sign-in/index.wxss";
+.body {
+    padding-bottom: 160rpx;
+}
+
+.send_code {
+    padding: 16rpx 30rpx;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.agreement {
+    padding: 70rpx 0;
+}
+
+.btn {
+    margin-top: 0 !important;
+}
+
+.revert {
+    transform: translateY(140rpx);
+}

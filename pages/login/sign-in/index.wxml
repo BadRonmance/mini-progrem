@@ -29,5 +29,5 @@
         <!-- 忘记密码 END -->
     </view>
     <!-- 背景图片 -->
-    <image class="bg_img" src="{{bgImg}}" mode="widthFix"></image>
+    <image class="bg_img" src="{{bgImg}}" mode="scaleToFill"></image>
 </view>

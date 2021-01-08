@@ -7,7 +7,7 @@
         <view class="page_title">
             <image mode="aspectFill" src="/assets/images/index/home-logo.png" class="dis_in_center project_logo" />
             <text class="dis_in_center fon_28 page_title_line">|</text>
-            <text class="dis_in_center color_f fon_46 ">登录</text>
+            <text class="dis_in_center color_f fon_46 ">注册</text>
         </view>
         <!-- 页面TITLE END -->
         <!-- 表单 START -->
@@ -16,16 +16,19 @@
                 <view slot="icon1" bindtap="changePWtype">
                     <text class="iconfont {{formData[1].inputType=='text'?'iconyincang':'iconxianshi'}} color_f fon_40"></text>
                 </view>
+                <view class="send_code fon_30 color_3" slot="identifyingCode">发送验证码</view>
             </ebring-form>
         </view>
         <!-- 表单 END -->
         <!-- btn START -->
-        <button class="btn">登录</button>
+        <view class="t_c color_6 agreement">
+            <text>我已阅读并同意</text>
+            <text class="color_e3">《FIBA中国数字化平台用户协议》</text>
+        </view>
+        <button class="btn">提交</button>
         <!-- btn END -->
         <!-- 忘记密码 START -->
-        <view class="t_c color_e3">
-            <view class="forgetPW dis_in_center">忘记密码?</view>
-        </view>
+        <view class="t_c color_6 revert">已有账号，返回登录</view>
         <!-- 忘记密码 END -->
     </view>
     <!-- 背景图片 -->

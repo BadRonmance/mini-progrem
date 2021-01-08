@@ -68,7 +68,7 @@
                         },
                         {
                               "name": "登录",
-                              "pathName": "pages/login/index",
+                              "pathName": "pages/login/register/index",
                               "query": "",
                               "scene": null
                         }

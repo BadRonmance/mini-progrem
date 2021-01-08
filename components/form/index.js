@@ -29,7 +29,7 @@ Component({
     },
     data: {
         formItemStyle: "",
-        formDataCopy: []
+        formValue: []
     },
     attached() {
         let result = {}
@@ -38,16 +38,16 @@ Component({
         })
         console.log(result)
         this.setData({
-            formDataCopy: result
+            formValue: result
         })
     },
-    created() {},
-    ready() {},
+    created() { },
+    ready() { },
     methods: {
         changeValue(e) {
             let data = e.detail
-            this.data.formDataCopy[data.prop] = data.value
-            console.log(this.data.formDataCopy)
+            this.data.formValue[data.prop] = data.value
+            this.triggerEvent("passValue", this.data.formValue)
         }
     }
 })
