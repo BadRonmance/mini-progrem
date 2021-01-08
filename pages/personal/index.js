@@ -93,7 +93,7 @@ Page({
     },
     toLogin() {
         wx.navigateTo({
-            url: '/pages/login/index',
+            url: '/pages/login/sign-in/index',
         })
     },
     /**

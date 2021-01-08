@@ -43,7 +43,7 @@ page {
 
 .forgetPW {
     margin-top: 100rpx;
-    padding-bottom: 10rpx;
+    padding-bottom: 22rpx;
     background-image: linear-gradient(to right, #E3BF68, #E3BF68);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -52,5 +52,5 @@ page {
 
 .body {
     z-index: 1000;
-    padding-bottom: 100rpx;
+    padding-bottom: 180rpx;
 }

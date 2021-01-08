@@ -24,10 +24,10 @@
         <!-- btn END -->
         <!-- 忘记密码 START -->
         <view class="t_c color_e3">
-            <view class="forgetPW dis_in_center">忘记密码?</view>
+            <navigator url="/pages/login/register/index" class="forgetPW dis_in_center">忘记密码?</navigator>
         </view>
         <!-- 忘记密码 END -->
     </view>
     <!-- 背景图片 -->
-    <image class="bg_img" src="{{bgImg}}" mode="scaleToFill"></image>
+    <image class="bg_img" src="{{bgImg}}" mode="widthFix"></image>
 </view>
