@@ -8,6 +8,7 @@
   background: linear-gradient(360deg, #070707 0%, #1A1A1A 100%);
 }
 .title{
+  margin-top: 20rpx;
   /* margin-bottom: 28rpx; */
 }
 .logo{

@@ -10,7 +10,7 @@ Page({
             lineText: "FIBR中国数字化平台",
             textColor: "#fff"
         },
-        titleHeight: (app.globalData.height+app.globalData.statusBarHeight+10)+'px',
+        titleHeight: app.globalData.customHeight+'px',
         banner: {
             height: '140px',
             system: {
