@@ -1,58 +1,72 @@
 /* pages/index/index.wxss */
-.home{
+.home {
   padding-bottom: 155rpx;
 }
-.titleBox{
-  height: 430rpx;
+
+.titleBox {
+  height: 470rpx;
   padding: 0 36rpx;
   background: linear-gradient(360deg, #070707 0%, #1A1A1A 100%);
 }
-.title{
-  /* margin-bottom: 28rpx; */
+
+.title {
+  padding: 22rpx 0;
 }
-.logo{
+
+.logo {
   width: 114rpx;
   height: 62rpx;
 }
-.address{
+
+.address {
   color: #E3BF68;
   margin-left: 23rpx;
 }
-.address image{
+
+.address image {
   width: 16rpx;
   height: 21.8rpx;
   margin-right: 8rpx;
 }
-.certificate{
+
+.certificate {
   width: 178rpx;
   height: 48rpx;
 }
-#banner{
+
+#banner {
   transform: translateY(28rpx);
 }
-.navBox{
+
+.navBox {
   margin-top: 141rpx;
   padding: 0 55rpx;
 }
-.navBox .item image{
+
+.navBox .item image {
   width: 80rpx;
   height: 80rpx;
 }
-.levelExaminate{
+
+.levelExaminate {
   padding: 0 0 0 36rpx;
   margin-top: 52rpx;
 }
-.trainBox{
+
+.trainBox {
   margin-top: 27rpx;
 }
-.cont{
+
+.cont {
   white-space: nowrap;
-  overflow-x:scroll;
+  overflow-x: scroll;
 }
-.classCont{
+
+.classCont {
   white-space: nowrap;
-  overflow-x:scroll;
+  overflow-x: scroll;
 }
-.newsCont{
+
+.newsCont {
   padding-right: 36rpx;
 }
