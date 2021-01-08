@@ -1,4 +1,5 @@
 <!--pages/index/index.wxml-->
+<custom-header style="{{style}}"></custom-header>
 <view class="home fon_28">
   <view class="titleBox" style="padding-top:{{titleHeight}}">
     <custom-header style="{{style}}"></custom-header>
@@ -9,46 +10,43 @@
           <image mode="aspectFit" src="../../assets/images/index/address.png"></image>
           {{currentCity}}
         </view>
-      </view>
-      <image class="certificate" mode="aspectFit" src="../../assets/images/index/certificate.png" data-path="证书查询path" bindtap="jumpPath"></image>
+        <swiper height="{{banner.height}}" system="{{banner.system}}" data="{{banner.swiperData}}" id="banner">
+        </swiper>
     </view>
-    <swiper height="{{banner.height}}" system="{{banner.system}}" data="{{banner.swiperData}}" id="banner">
-		</swiper>
-  </view>
-  <!-- nav导航 -->
-  <view class="navBox flex-bet color_3">
-    <view class="item t_c" wx:for="{{navData}}" wx:key="index" data-path="{{item.path}}" bindtap="jumpPath">
-      <image mode="aspectFit" src="{{item.src}}"></image>
-      <view>{{item.title}}</view>
+    <!-- nav导航 -->
+    <view class="navBox flex-bet color_3">
+        <view class="item t_c" wx:for="{{navData}}" wx:key="index" data-path="{{item.path}}" bindtap="jumpPath">
+            <image mode="aspectFit" src="{{item.src}}"></image>
+            <view>{{item.title}}</view>
+        </view>
     </view>
-  </view>
-  <!-- 考级 -->
-  <view class="levelExaminate">
-    <view-title system="{{levelTitle}}"></view-title>
-    <view class="cont">
-      <card-item data="{{levelExaminateData}}"></card-item>
+    <!-- 考级 -->
+    <view class="levelExaminate">
+        <view-title system="{{levelTitle}}"></view-title>
+        <view class="cont">
+            <card-item data="{{levelExaminateData}}"></card-item>
+        </view>
     </view>
-  </view>
-  <!-- 培训 -->
-  <view class="levelExaminate trainBox">
-    <view-title system="{{trainTitle}}"></view-title>
-    <view class="cont">
-      <card-item data="{{trainData}}"></card-item>
+    <!-- 培训 -->
+    <view class="levelExaminate trainBox">
+        <view-title system="{{trainTitle}}"></view-title>
+        <view class="cont">
+            <card-item data="{{trainData}}"></card-item>
+        </view>
     </view>
-  </view>
-  <!-- 云客互联-名帅视界 -->
-  <view class="levelExaminate">
-    <view-title system="{{classTitle}}" bindchange="titleChange"></view-title>
-    <view class="cont classCont">
-      <class-list class-list="{{videoClassList}}" style="{{classStyle}}"></class-list>
-    </view> 
-  </view>
-  <!-- 新闻资讯 -->
-  <view class="levelExaminate">
-    <view-title system="{{newsTitle}}"></view-title>
-    <view class="cont newsCont">
-      <news-list list="{{newsList}}" bindcloseAdvent="closeAdvent"></news-list>
-    </view> 
-  </view>
+    <!-- 云客互联-名帅视界 -->
+    <view class="levelExaminate">
+        <view-title system="{{classTitle}}" bindchange="titleChange"></view-title>
+        <view class="cont classCont">
+            <class-list class-list="{{videoClassList}}" style="{{classStyle}}"></class-list>
+        </view>
+    </view>
+    <!-- 新闻资讯 -->
+    <view class="levelExaminate">
+        <view-title system="{{newsTitle}}"></view-title>
+        <view class="cont newsCont">
+            <news-list list="{{newsList}}" bindcloseAdvent="closeAdvent"></news-list>
+        </view>
+    </view>
 
 </view>
