@@ -717,7 +717,7 @@
 */
 
 .hydlnr_2 {
-    <<<<<<< HEAD display: -webkit-box;
+    display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-all;
@@ -730,26 +730,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-all;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    =======display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-break: break-all;
     white-space: normal !important;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-}
-
-.hydlnr_3 {
-    display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-break: break-all;
-    white-space: normal !important;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    >>>>>>>ebdfc0b5fc5f51a346235bdc761bd904d6eba9de
 }
 
 .gobyndsingle {
