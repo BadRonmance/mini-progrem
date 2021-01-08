@@ -1,12 +1,15 @@
-<!--pages/news/index.wxml-->
+<!--新闻资讯列表-->
 <text>pages/news/index.wxml</text>
 <view id="news">
-  <block wx:for="{{list}}" wx:key="index">
+  <!-- <block wx:for="{{list}}" wx:key="index">
     <view wx:if="{{item.type=='news'}}">
       列表：{{item.name}}---{{index}}
     </view>
     <view class="advert" wx:else>
       广告：{{item.name}}
     </view>
-  </block>
+  </block> -->
+  <view class="cont pa_lr-36">
+    <news-list list="{{list}}" bindcloseAdvent="closeAdvent"></news-list>
+  </view>
 </view>

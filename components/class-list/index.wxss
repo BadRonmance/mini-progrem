@@ -1,0 +1,17 @@
+@import "../../assets/css/public.wxss";
+.classItem{
+  display: inline-block;
+  box-shadow: 0rpx 3rpx 6rpx rgba(0, 0, 0, 0.11);
+  border-radius: 8rpx;
+  height: 316rpx;
+}
+.classItem .image{
+  margin-bottom: 16rpx;
+}
+.classItem .pa9{
+  padding: 0 9rpx;
+}
+.classItem .bottom{
+  position: absolute;
+  bottom: 11rpx;
+}

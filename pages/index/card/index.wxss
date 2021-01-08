@@ -1,0 +1,26 @@
+@import "../../../assets/css/public.wxss";
+.card-item{
+  width: 310rpx;
+  height: 190rpx;
+  display: inline-block;
+  margin-right: 14rpx;
+  box-shadow: 3rpx 3rpx 20rpx rgba(20, 19, 26, 0.56);
+  border-radius: 8rpx;
+}
+.card-item>view{
+  z-index: 10;
+  padding: 18rpx 14rpx 12rpx;
+}
+.card-item .address{
+  color: #fff;
+  margin-left: 0;
+}
+.address image{
+  width: 16rpx;
+  height: 21.8rpx;
+  margin-right: 8rpx;
+}
+.card-item .name{
+  margin-top: 34rpx;
+  margin-bottom: 10rpx;
+}

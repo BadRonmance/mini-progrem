@@ -245,6 +245,7 @@ App({
     },
     globalData: {
         height: 0,
+        currentCity: '陕西 西安',
         userIdentity: {
             0: '游客',
             1: '普通用户',

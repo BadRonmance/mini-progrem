@@ -63,6 +63,11 @@
     padding-right: 8rpx;
 }
 
+.pa_lr-36 {
+    padding-left: 36rpx;
+    padding-right: 36rpx;
+}
+
 
 /* 
 ! 对margin的边距值进行基础的编写
@@ -101,6 +106,10 @@
 
 .mar_r-18 {
     margin-right: 18rpx;
+}
+
+.mar_r-28 {
+    margin-right: 28rpx;
 }
 
 .mar_8 {
@@ -296,7 +305,7 @@
 }
 
 .color_red {
-    color: #f00;
+    color: #FF0909;
 }
 
 
@@ -708,7 +717,7 @@
 */
 
 .hydlnr_2 {
-    display: -webkit-box;
+    <<<<<<< HEAD display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-all;
@@ -723,6 +732,24 @@
     word-break: break-all;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    =======display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: normal !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.hydlnr_3 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: normal !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    >>>>>>>ebdfc0b5fc5f51a346235bdc761bd904d6eba9de
 }
 
 .gobyndsingle {

@@ -1,0 +1,11 @@
+<view class="card-item rel color_f" wx:for="{{data.list}}" wx:key="id">
+  <image class="wid hei ab" mode="aspectFit" src="{{data.imgsrc}}"></image>
+  <view class="wid hei ab">
+    <view class="address flex-y-center fon_34 gobyndsingle">
+      <image mode="aspectFit" src="../../../assets/images/index/address1.png"></image>
+      {{item.city}}
+    </view>
+    <view class="name gobyndsingle">{{item.name}}</view>
+    <view class="fon_20">{{item.time}}</view>
+  </view>
+</view>

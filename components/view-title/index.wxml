@@ -1,0 +1,14 @@
+<!-- title -->
+<view class="flex-bet sectionTitle">
+  <view class="flex-grow-1 flex-y-bottom">
+    <view wx:for="{{labelText}}" wx:key="index" data-index="{{index}}" bindtap="change"
+      class="dis_in label mar_r-28 {{activeIndex==index?activeClass:defaultClass}}">
+      <text class="{{activeIndex==index?'title_span':''}}">{{item[0]}}</text>
+      <text>{{item[1]}}</text>
+    </view>
+    <view class="color_9 fon_26">{{system.tip}}</view>
+  </view>
+  <view class="flex-grow-0 fon_14 color_9" wx:if="{{system.showMore}}" data-path="{{system.path}}" bindtap="jumpPage">
+    <image mode="aspectFit" class="icon_you mar_l-8" src="../../assets/images/index/more.png"></image>
+  </view>
+</view>

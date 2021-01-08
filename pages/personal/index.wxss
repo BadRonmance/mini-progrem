@@ -51,6 +51,7 @@ page {
 .btn_list {
       border-top-left-radius: 20rpx;
       border-top-right-radius: 20rpx;
+      /* margin-top: -40rpx; */
       transform: translateY(-40rpx);
       padding-top: 40rpx;
       overflow: hidden;

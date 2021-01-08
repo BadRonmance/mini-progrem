@@ -3,6 +3,10 @@
   "navigationBarTextStyle":"white",
   "navigationStyle": "custom",
   "usingComponents": {
-    "swiper": "../../components/swiper/index"
+    "swiper": "../../components/swiper/index",
+    "view-title": "../../components/view-title/index",
+    "card-item": "./card/index",
+    "class-list": "../../components/class-list/index",
+    "news-list": "../../components/news-list/index"
   }
 }

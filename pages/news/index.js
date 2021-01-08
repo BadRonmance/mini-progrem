@@ -18,16 +18,23 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log('show');
     let newsList = [
-      {'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},
-      {'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'},{'name':'新闻资讯'}
+      {'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},
+      {'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'},{'title':'新闻资讯'}
     ];
     let advertList = [
-      {'name':'广告1'},{'name':'广告2'},{'name':'广告3'},{'name':'广告4'},{'name':'广告5'}
+      {'title':'广告1',id:'a1'},{'title':'广告2',id:'a1'},{'title':'广告3',id:'a1'},{'title':'广告4',id:'a1'},{'title':'广告5',id:'a1'}
     ];
     newsList.map(item=>{
       item.type = 'news';
+      item.num = 100;
+      item.time = '2021-1-8';
+      item.src ="../../assets/images/index/news.png";
+      return item;
+    });
+    advertList.map(item=>{
+      item.type = 'advent';
+      item.src ="../../assets/images/index/news.png";
       return item;
     });
     let len = Math.ceil((newsList.length) / 7);
@@ -36,20 +43,26 @@ Page({
     }
     this.setData({
       list: newsList
+    });
+  },
+  // 关闭广告
+  closeAdvent(data){
+    this.data.list.splice(data.detail,1)
+    this.setData({
+      list: this.data.list
     })
-    console.log(newsList)
   },
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    console.log('下拉')
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    console.log('上啦')
   }
 })

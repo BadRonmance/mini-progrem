@@ -36,7 +36,6 @@ Component({
         this.data.formData.map(item => {
             result[item.prop] = item.value
         })
-        console.log(result)
         this.setData({
             formValue: result
         })
