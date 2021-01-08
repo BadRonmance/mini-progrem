@@ -1,17 +1,20 @@
 <!--pages/index/index.wxml-->
 <custom-header style="{{style}}"></custom-header>
 <view class="home fon_28">
-  <view class="titleBox" style="padding-top:{{titleHeight}}">
-    <custom-header style="{{style}}"></custom-header>
-    <view class="flex-bet title">
-      <view class="flex flex-bet">
-        <image class="logo" mode="aspectFit" src="../../assets/images/index/home-logo.png"></image>
-        <view class="address">
-          <image mode="aspectFit" src="../../assets/images/index/address.png"></image>
-          {{currentCity}}
+    <view class="titleBox" style="padding-top:{{titleHeight}}">
+      <custom-header style="{{style}}"></custom-header>
+      <view class="flex-bet title">
+        <view class="flex flex-bet">
+          <image class="logo" mode="aspectFit" src="../../assets/images/index/home-logo.png"></image>
+          <view class="address">
+            <image mode="aspectFit" src="../../assets/images/index/address.png"></image>
+            {{currentCity}}
+          </view>
         </view>
-        <swiper height="{{banner.height}}" system="{{banner.system}}" data="{{banner.swiperData}}" id="banner">
-        </swiper>
+        <image class="certificate" mode="aspectFit" src="../../assets/images/index/certificate.png" data-path="证书查询path" bindtap="jumpPath"></image>
+      </view>
+      <swiper height="{{banner.height}}" system="{{banner.system}}" data="{{banner.swiperData}}" id="banner">
+      </swiper>
     </view>
     <!-- nav导航 -->
     <view class="navBox flex-bet color_3">

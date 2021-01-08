@@ -4,7 +4,7 @@
 }
 
 .titleBox {
-  height: 470rpx;
+  height: 430rpx;
   padding: 0 36rpx;
   background: linear-gradient(360deg, #070707 0%, #1A1A1A 100%);
 }
