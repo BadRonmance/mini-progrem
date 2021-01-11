@@ -1,0 +1,8 @@
+/* pagesA/mine-news/index.wxss */
+.system_new_title {
+      padding-top: 70rpx;
+      padding-bottom: 70rpx;
+}
+.news_list_item{
+      padding: 20rpx 0;
+}

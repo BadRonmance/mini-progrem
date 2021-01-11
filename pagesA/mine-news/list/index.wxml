@@ -1,0 +1,20 @@
+<view>
+      <view class="system_new_title pa_lr-36 fon_wei fon_38">系统消息</view>
+      <view class="pa_lr-36">
+            <navigator url="/pagesA/mine-news/detail/index" class="flex news_list_item" wx:for="{{newsList}}">
+                  <view class="flex-grow-1">
+                        <view class=" flex wid flex-y-center">
+                              <view class="fon_30 flex-grow-0 fon_wei color_e3 mar_r-18">
+                                    ·
+                              </view>
+                              <view class=" color_3 gobyndsingle flex-grow-1 fon_26">
+                                    XXXXX培训机构XXXXX培最新通知XXXXX培训机构XXXXX培最新通知XXXX培训机构XXXXX培最新通知XXXX培训机构XXXXX培最新通知
+                              </view>
+                        </view>
+                  </view>
+                  <view class="flex-grow-0 mar_l-18 color_9 fon_26 flex-y-center">
+                        {{item.CNtime}}
+                  </view>
+            </navigator>
+      </view>
+</view>

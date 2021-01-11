@@ -13,60 +13,7 @@ Page({
             textColor: "#fff"
         },
         show: false,
-        userBtnList: [{
-            name: "身份认证",
-            type: ['1', '2', '3', '4'],
-            icon: ""
-        }, {
-            name: "我的证书",
-            type: ['2', '3', '4'],
-            icon: ""
-        }, {
-            name: "我的考级",
-            type: ['4'],
-            icon: ""
-        }, {
-            name: "我的培训",
-            type: ['2', '3'],
-            icon: ""
-        }, {
-            name: "归属机构",
-            type: ['2', '3', '4'],
-            icon: ""
-        }, {
-            name: "我的课程",
-            type: ['1', '2', '3', '4', '5'],
-            icon: ""
-        }, {
-            name: "机构成员",
-            type: ['6', '2', '3'],
-            icon: ""
-        }, {
-            name: "考级信息",
-            type: ['6', '2', '3'],
-            icon: ""
-        }, {
-            name: "缴费明细",
-            type: ['1', '2', '3', '4', '5'],
-            icon: ""
-        }, {
-            name: "我的授课",
-            type: ['5'],
-            icon: ""
-        }, {
-            name: "在线答疑",
-            type: ['0', '1', '2', '3', '4', '5', '6'],
-            icon: ""
-        }, {
-            name: "我的消息",
-            type: ['0', '1', '2', '3', '4', '5', '6'],
-            icon: ""
-        }, {
-            name: "设置",
-            type: ['0', '1', '2', '3', '4', '5', '6'],
-            icon: ""
-        }],
-        btnList:[]
+        btnList: []
     },
 
     /**
@@ -74,14 +21,13 @@ Page({
      */
     onLoad: function (options) {
         let that = this
-        let userType = 5
+        let userType = 1
         let result = []
-        this.data.userBtnList.map(item => {
+        wx.JsonData.personal_UserBtnList.map(item => {
             if (item.type.findIndex(val => val == userType) !== -1) {
                 result.push(item)
             }
         })
-        console.log(result)
         that.setData({
             btnList: result
         })
@@ -90,6 +36,24 @@ Page({
                 show: true
             })
         }, 300)
+    },
+    itemRouter(e) {
+        let path = e.currentTarget.dataset.path
+        if (!path) return
+        if (path === '') return
+        console.log(wx.util.dataType(path) === 'Object')
+        if (wx.util.dataType(path) === 'String') {
+            wx.navigateTo({
+                url: path,
+            })
+        }
+        if (wx.util.dataType(path) === 'Object') {
+            console.log(path['default'])
+            wx.navigateTo({
+                url: path['default'],
+            })
+        }
+
     },
     toLogin() {
         wx.navigateTo({

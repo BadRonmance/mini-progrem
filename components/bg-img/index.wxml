@@ -1,0 +1,9 @@
+<view class="wid_hei rel" style="overflow:hidden">
+      <image class="wid_hei bg_img" mode="aspectFill"
+            src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.ewebweb.com%2Fuploads%2F20191203%2F19%2F1575373717-WUtgwhbXOv.jpg&refer=http%3A%2F%2Fimg.ewebweb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612944808&t=8a72b3ee008017df814ed8eb11d6a5be"
+            class="ab">
+      </image>
+      <view class="wid_hei ab slot_view">
+            <slot></slot>
+      </view>
+</view>

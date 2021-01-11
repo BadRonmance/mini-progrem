@@ -1,0 +1,28 @@
+<view class="auth_title">
+      <bg-img class="wid_hei">
+            <view class="color_e3 auth_title_text pa_lr-36">
+                  <view class="pa_b-18 fon_38 fon_wei">
+                        认证中心
+                  </view>
+                  <view class="pa_t-18 fon_26">
+                        CERTIFICATION CENTER
+                  </view>
+            </view>
+      </bg-img>
+</view>
+<view class="pa_lr-36">
+      <view class="auth_list">
+            <view class="auth_item primary_btn color_f" style="background:{{item.background}}" wx:for="{{authItemList}}"
+                  wx:key="*this">
+                  <view class="fon_36 pa_b-18 fon_wei ">{{item.title}}</view>
+                  <view class="flex pa_t-8 fon_26">
+                        <view class="flex-grow-1">
+                              {{item.desc}}
+                        </view>
+                        <view class="flex-grow-0">
+                              more
+                        </view>
+                  </view>
+            </view>
+      </view>
+</view>
