@@ -1,0 +1,6 @@
+<!--pages/news-detail/index.wxml-->
+<view id="newsDetail">
+  <view class="title">新闻详情</view>
+  <view class="time"></view>
+  <view class="content"></view>
+</view>

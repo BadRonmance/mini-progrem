@@ -1,1 +1,3 @@
-/* pages/news/index.wxss */
+.navBox{
+  margin: 44rpx 0;
+}

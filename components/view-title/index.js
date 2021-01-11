@@ -19,6 +19,7 @@ Component({
    * 组件的初始数据
    */
   data: {
+    imgConfig: wx.imgConfig.default,
     inteStyle: "",
     activeIndex: 0,
     defaultClass: "fon_30 color_9 fon_wei",

@@ -1,0 +1,31 @@
+@import "../../assets/css/public.wxss";
+.item{
+  background: #fff;
+  border-bottom: 2rpx solid #e5e5e5;
+  margin-bottom: 23rpx;
+  padding-bottom: 25rpx;
+}
+.border{
+  width: 5rpx;
+  height: 24rpx;
+  background: linear-gradient(to bottom,#101010,#8D8D8D);
+}
+.item .cont{
+  margin-top: 15rpx;
+}
+.item .cont>view{
+  padding-top: 7rpx;
+}
+.item image{
+  width: 240rpx;
+  height: 135rpx;
+}
+.lineHeight{
+  line-height: 37rpx;
+}
+.time{
+  bottom: 7rpx;
+}
+.bottom{
+  margin-top: 28rpx;
+}

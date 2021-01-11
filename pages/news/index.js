@@ -4,6 +4,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    titleSystem: {
+      defaultIndex: 0,
+      leftText: ["热门资讯","新闻资讯","课程资讯"],
+      showMore: false
+    },
     list: []
   },
 
@@ -44,6 +49,9 @@ Page({
     this.setData({
       list: newsList
     });
+  },
+  tabChange(data){
+    console.log(data.detail)
   },
   // 关闭广告
   closeAdvent(data){

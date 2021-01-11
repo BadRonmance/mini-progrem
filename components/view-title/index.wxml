@@ -9,6 +9,6 @@
     <view class="color_9 fon_26">{{system.tip}}</view>
   </view>
   <view class="flex-grow-0 fon_14 color_9" wx:if="{{system.showMore}}" data-path="{{system.path}}" bindtap="jumpPage">
-    <image mode="aspectFit" class="icon_you mar_l-8" src="../../assets/images/index/more.png"></image>
+    <image mode="aspectFit" class="icon_you mar_l-8" src="{{imgConfig.home_more}}"></image>
   </view>
 </view>

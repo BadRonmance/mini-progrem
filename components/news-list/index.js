@@ -14,7 +14,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    imgConfig: wx.imgConfig.default,
   },
 
   /**
@@ -23,6 +23,12 @@ Component({
   methods: {
     closeAdvent(e){
       this.triggerEvent('closeAdvent',e.currentTarget.dataset.index)
+    },
+    newsDetails(e){
+      console.log(e.currentTarget.dataset.id);
+      wx.navigateTo({
+        url: '/pages/news-detail/index?id='+e.currentTarget.dataset.id,
+      })
     }
   }
 })

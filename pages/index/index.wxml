@@ -5,13 +5,13 @@
       <custom-header style="{{style}}"></custom-header>
       <view class="flex-bet title">
         <view class="flex flex-bet">
-          <image class="logo" mode="aspectFit" src="../../assets/images/index/home-logo.png"></image>
+          <image class="logo" mode="aspectFit" src="{{imgConfig.home_logo}}"></image>
           <view class="address">
-            <image mode="aspectFit" src="../../assets/images/index/address.png"></image>
+            <image mode="aspectFit" src="{{imgConfig.home_address}}"></image>
             {{currentCity}}
           </view>
         </view>
-        <image class="certificate" mode="aspectFit" src="../../assets/images/index/certificate.png" data-path="证书查询path" bindtap="jumpPath"></image>
+        <image class="certificate" mode="aspectFit" src="{{imgConfig.home_certificate}}" data-path="证书查询path" bindtap="jumpPath"></image>
       </view>
       <swiper height="{{banner.height}}" system="{{banner.system}}" data="{{banner.swiperData}}" id="banner">
       </swiper>
@@ -41,7 +41,7 @@
     <view class="levelExaminate">
         <view-title system="{{classTitle}}" bindchange="titleChange"></view-title>
         <view class="cont classCont">
-            <class-list class-list="{{videoClassList}}" style="{{classStyle}}"></class-list>
+            <class-card class-list="{{videoClassList}}" style="{{classStyle}}"></class-card>
         </view>
     </view>
     <!-- 新闻资讯 -->

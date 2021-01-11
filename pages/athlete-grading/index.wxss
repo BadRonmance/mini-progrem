@@ -1,0 +1,10 @@
+.grading{
+  background: #fff;
+}
+.titleBox{
+  height: 125rpx;
+  box-shadow: 0px 0px 12rpx rgba(0, 0, 0, 0.16);
+}
+.cont{
+  margin-top: 39rpx;
+}

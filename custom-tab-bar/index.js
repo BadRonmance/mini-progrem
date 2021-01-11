@@ -1,5 +1,6 @@
 Component({
   data: {
+    "imgConfig": wx.imgConfig.default,
     "selected": 0,
     "backgroundColor": "#101010",
     "color": "#fff",
@@ -7,14 +8,14 @@ Component({
     "list": [
       {
         "pagePath": "/pages/index/index",
-        "iconPath": "/assets/images/tabbar/index.png",
-        "selectedIconPath": "/assets/images/tabbar/index.png",
+        "iconPath": wx.imgConfig.default.tabbar_home,
+        "selectedIconPath": wx.imgConfig.default.tabbar_home,
         "text": "首页"
       },
       {
         "pagePath": "/pages/personal/index",
-        "iconPath": "/assets/images/tabbar/person.png",
-        "selectedIconPath": "/assets/images/tabbar/person.png",
+        "iconPath": wx.imgConfig.default.tabbar_person,
+        "selectedIconPath": wx.imgConfig.default.tabbar_person,
         "text": "我的"
       }
     ]

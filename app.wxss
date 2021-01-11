@@ -8,6 +8,7 @@ page {
     overflow-x: hidden;
     background: #f9f9f9;
     font-size: 32rpx;
+    color: #333;
 }
 
 view {

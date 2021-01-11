@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "运动员考级",
+  "navigationBarBackgroundColor": "#101010",
+  "navigationBarTextStyle":"white",
+  "usingComponents": {
+    "grading-train-list": "../../components/grading-train-list/index",
+    "city-level-choice": "../../components/city-level-choice/index"
+  }
+}

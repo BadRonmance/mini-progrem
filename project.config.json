@@ -77,6 +77,18 @@
           "pathName": "pages/news/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "运动员考级",
+          "pathName": "pages/athlete-grading/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "教练员推广员培训",
+          "pathName": "pages/train-list/indx",
+          "query": "",
+          "scene": null
         }
       ]
     }

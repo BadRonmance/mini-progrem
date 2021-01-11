@@ -582,6 +582,10 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.flex-y-start{
+    display: flex;
+    align-items: flex-start;
+}
 
 
 /* 
@@ -737,9 +741,13 @@
 }
 
 .gobyndsingle {
+    display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    word-break: break-all;
+    white-space: normal !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
 

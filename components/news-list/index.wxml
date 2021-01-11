@@ -1,11 +1,11 @@
 <!--广告列表-->
 <block wx:for="{{list}}" wx:key="id">
-  <view class="news-item flex" wx:if="{{item.type=='news'}}">
+  <view class="news-item flex" wx:if="{{item.type=='news'}}" data-id="{{id}}" bindtap="newsDetails">
     <view class="flex-grow-1 rel">
       <view class="title hydlnr_2 fon_28">{{item.title}}</view>
       <view class="flex-bet bottom fon_22 wid ab">
         <view class="flex-grow-1">
-          <image mode="aspectFit" class="eyes" src="../../assets/images/index/eyes.png"></image>
+          <image mode="aspectFit" class="eyes" src="{{imgConfig.home_eyes}}"></image>
           {{item.num}}
         </view>
         <view class="flex-grow-0">{{item.time}}</view>

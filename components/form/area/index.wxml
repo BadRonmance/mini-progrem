@@ -1,1 +1,1 @@
-<van-area class="area_picker" area-list="{{ areaList }}" />
+<van-area class="area_picker" columns-num="{{ areaList.isnoCounty?2:3 }}" area-list="{{ areaList }}" bind:confirm="confirm" bind:cancel="cancel" />

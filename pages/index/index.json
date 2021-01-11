@@ -6,7 +6,7 @@
     "swiper": "../../components/swiper/index",
     "view-title": "../../components/view-title/index",
     "card-item": "./card/index",
-    "class-list": "../../components/class-list/index",
+    "class-card": "../../components/class-card/index",
     "news-list": "../../components/news-list/index"
   }
 }

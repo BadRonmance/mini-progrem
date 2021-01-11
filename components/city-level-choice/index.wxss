@@ -1,0 +1,23 @@
+@import "../../assets/css/public.wxss";
+.screenBox{
+  height: 80rpx;
+  border-radius: 8rpx;
+}
+.screenBox>view{ 
+  flex: 1;
+}
+.address{
+  border-right: 2rpx solid #E5E5E5;
+}
+.pa_l30{
+  padding-left: 30rpx;
+}
+.address image{
+  width: 38rpx;
+  height: 38rpx;
+  margin-right: 4rpx;
+}
+.regionArea{
+  z-index: 100;
+  left: 0;
+}

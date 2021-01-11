@@ -5,6 +5,7 @@ Page({
      */
     data: {
         currentCity: app.globalData.currentCity,
+        imgConfig: wx.imgConfig.default,
         style: {
             background: "",
             lineText: "FIBR中国数字化平台",
@@ -25,17 +26,17 @@ Page({
             }
         },
         navData: [{
-                src: '../../assets/images/index/nav-levelExaminate.png',
+                src: wx.imgConfig.default.home_navLevel,
                 title: '运动员考级',
                 path: '1'
             },
             {
-                src: '../../assets/images/index/nav-train.png',
+                src: wx.imgConfig.default.home_navTrain,
                 title: '教练/推广员培训',
                 path: '2'
             },
             {
-                src: '../../assets/images/index/nav-onlineClass.png',
+                src: wx.imgConfig.default.home_navClass,
                 title: '线上课程',
                 path: '3'
             },
@@ -43,12 +44,12 @@ Page({
         levelTitle: {
             leftText: ["考级"],
             showMore: true,
-            path: "",
+            path: "/pages/athlete-grading/index",
         },
         trainTitle: {
             leftText: ["培训"],
             showMore: true,
-            path: "",
+            path: "/pages/train-list/indx",
             tip: '当前城市暂无培训'
         },
         classTitle: {
@@ -88,12 +89,12 @@ Page({
                     time: '2020.12.14~2020.12.20'
                 }
             ],
-            imgsrc: '/assets/images/index/levelBagk.png'
+            imgsrc: wx.imgConfig.default.home_levelBagk
         },
         trainData: {
             list: [{
                     id: '1',
-                    city: '北京',
+                    city: '北京反反复复付付付付付付付付付付付付付付付付付付',
                     name: 'MINI级运动员考级',
                     time: '2020.12.14~2020.12.20'
                 },
@@ -116,7 +117,7 @@ Page({
                     time: '2020.12.14~2020.12.20'
                 }
             ],
-            imgsrc: '/assets/images/index/trainBagk.png'
+            imgsrc: wx.imgConfig.default.home_trainBagk
         },
         videoClassList: [{
                 id: '1',
@@ -124,7 +125,7 @@ Page({
                 look: '210',
                 price: '750',
                 isFree: false,
-                src: '../../assets/images/index/class.png'
+                src: wx.imgConfig.default.home_apiClass
             },
             {
                 id: '21',
@@ -132,7 +133,7 @@ Page({
                 look: '210',
                 price: '750',
                 isFree: true,
-                src: '../../assets/images/index/class.png'
+                src: wx.imgConfig.default.home_apiClass
             },
             {
                 id: '3',
@@ -140,7 +141,7 @@ Page({
                 look: '210',
                 price: '750',
                 isFree: true,
-                src: '../../assets/images/index/class.png'
+                src: wx.imgConfig.default.home_apiClass
             },
         ],
         classStyle: {
@@ -153,7 +154,7 @@ Page({
                 title: '国际篮联欧洲委员会批准2020-21年欧洲女足赛季的格反反复复付付付',
                 num: 100,
                 time: '2021-1-8',
-                src: '../../assets/images/index/news.png'
+                src: wx.imgConfig.default.home_apiNews
             },
             {
                 id: '2',
@@ -161,7 +162,7 @@ Page({
                 title: '国际篮联欧洲委员会批准2020-21年欧洲女足赛季的格反反复复付付付',
                 num: 100,
                 time: '2021-1-8',
-                src: '../../assets/images/index/news.png'
+                src:  wx.imgConfig.default.home_apiNews
             },
             {
                 id: '3',
@@ -169,13 +170,13 @@ Page({
                 title: '国际篮联欧洲委员会批准',
                 num: 100,
                 time: '2021-1-8',
-                src: '../../assets/images/index/news.png'
+                src:  wx.imgConfig.default.home_apiNews
             },
             {
                 id: '4',
                 type: 'advent',
                 title: '国际篮联欧洲委员会批准',
-                src: '../../assets/images/index/news.png'
+                src:  wx.imgConfig.default.home_apiNews
             }
         ]
     },
@@ -214,6 +215,7 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function () {
+        console.log(wx.imgConfig)
         if (typeof this.getTabBar === 'function' &&
             this.getTabBar()) {
             this.getTabBar().setData({

@@ -1,0 +1,20 @@
+<!--教练/推广员培训列表-->
+<view class="train fon_28 color_3">
+  <view class="titleBox flex-bet">
+    <view class="flex-y-center">
+      <image mode="aspectFit" src="{{imgConfig.train_coachActive}}"></image>
+      教练员培训
+    </view>
+    <view class="flex-y-center">
+      <image mode="aspectFit" src="{{imgConfig.train_extensionActive}}"></image>
+      推广员培训
+    </view>
+  </view>
+  <view class="titleBox flex-bet pa_lr-36">
+    <view-title class="tabbar" system="{{tabbarList}}"></view-title>
+    <city-level-choice choice-system="{{choiceSystem}}" bindconfirm="confirm" bindlevelChange="levelChange"></city-level-choice>
+  </view>
+  <view class="cont">
+    <grading-train-list data="{{trainData}}"></grading-train-list>
+  </view>
+</view>

@@ -1,6 +1,6 @@
 <cover-view class="tab-bar-box">
   <cover-view class="logo borderBox flex-center">
-    <cover-image class="img" src="/assets/images/index/logo.png"></cover-image>
+    <cover-image class="img" src="{{imgConfig.tabbar_logo}}"></cover-image>
   </cover-view>
   <cover-view class="tab-bar">
     <cover-view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">

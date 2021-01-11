@@ -1,0 +1,11 @@
+<!--运动员考级列表-->
+<view class="grading fon_28 color_3">
+  <view class="titleBox flex-between-new pa_lr-36">
+    <view class="fon_38 fon_wei-800 color_10">运动员考级</view>
+    <city-level-choice bindconfirm="confirm" bindlevelChange="levelChange"></city-level-choice>
+  </view>
+  <view class="cont">
+    <grading-train-list data="{{gradingData}}"></grading-train-list>
+  </view>
+
+</view>

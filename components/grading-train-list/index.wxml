@@ -1,0 +1,30 @@
+<!--考级，培训列表-->
+<block wx:for="{{data.list}}" wx:key="id">
+  <view class="item fon_28 pa_lr-36" data-id="{{item.id}}" bindtap="jumpDetail">
+    <view class="flex-y-center rel">
+      <view class="ab border" wx:if="{{data.isTrain}}"></view>
+      <view class="color_10 fon_wei-500 gobyndsingle mar_lr-8">{{item.name}}</view>
+      <view class="color_red fon_wei-800 fon_34" wx:if="{{!data.isTrain}}">¥{{item.price}}</view>
+    </view>
+    <view class="flex cont rel fon_26">
+      <image class="flex-grow-0 mar_r-18" mode="aspectFit" src="{{item.src}}"></image>
+      <view class="flex-grow-1">
+        <view class="flex-y-start">
+          <view class="flex-grow-0 mar_r-8">报名时间:</view>
+          <view class="lineHeight">{{item.bao}}</view>
+        </view>
+        <view class="ab time wid flex-y-start">
+          <view class="flex-grow-0 mar_r-8">考级时间:</view>
+          <view>{{item.kao}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="bottom flex-bet color_6 fon_22" wx:if="{{data.isTrain}}">
+      <view>培训学员：<text class="color_10 fon_wei-800 fon_34">{{item.num}}人</text></view>
+      <view>早鸟价：<text class="color_e3 fon_wei-800 fon_34">{{item.zao}}</text></view>
+      <view>常规价：<text class="color_red fon_wei-800 fon_34">{{item.price}}</text></view>
+    </view>
+    
+  </view>
+</block>
+

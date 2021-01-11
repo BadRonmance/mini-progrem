@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "form-area": "../../components/form/area/index"
+  }
+}

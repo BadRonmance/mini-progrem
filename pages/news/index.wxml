@@ -1,6 +1,5 @@
 <!--新闻资讯列表-->
-<text>pages/news/index.wxml</text>
-<view id="news">
+<view id="news" class="pa_lr-36">
   <!-- <block wx:for="{{list}}" wx:key="index">
     <view wx:if="{{item.type=='news'}}">
       列表：{{item.name}}---{{index}}
@@ -9,7 +8,10 @@
       广告：{{item.name}}
     </view>
   </block> -->
-  <view class="cont pa_lr-36">
+  <view class="navBox">
+    <view-title system="{{titleSystem}}" bindchange="tabChange"></view-title>
+  </view>
+  <view class="cont">
     <news-list list="{{list}}" bindcloseAdvent="closeAdvent"></news-list>
   </view>
 </view>

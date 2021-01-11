@@ -3,6 +3,7 @@
   "navigationBarBackgroundColor": "#101010",
   "navigationBarTextStyle":"white",
   "usingComponents": {
+    "view-title": "../../components/view-title/index",
     "news-list": "../../components/news-list/index"
   }
 }
