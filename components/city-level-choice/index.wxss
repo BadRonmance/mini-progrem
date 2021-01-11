@@ -17,6 +17,9 @@
   height: 38rpx;
   margin-right: 4rpx;
 }
+.icon{
+  margin-left: 4rpx;
+}
 .regionArea{
   z-index: 100;
   left: 0;

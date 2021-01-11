@@ -1,0 +1,64 @@
+#exambox_sign {
+    width: 100%;
+    background-color: #fff;
+}
+.padding_left{
+    padding-left: 36rpx;
+}
+.padding_right{
+    padding-right: 36rpx;
+}
+.exam_title {
+    padding: 39rpx 0 14rpx 36rpx;
+}
+.price_box{
+    padding-bottom: 28rpx;
+}
+.sign_price{
+    display: flex;
+    align-items: center;
+    padding-left: 36rpx;
+}
+.space_wei{
+    height: 12rpx;
+    background-color: #F5F7FA;
+}
+.sign_price_two{
+    margin-left:66rpx;
+}
+.det_price {
+    color: #FF0909;
+    /* padding-left: 36rpx; */
+    /* padding-bottom: 42rpx; */
+}
+.sign_infos{
+    padding-top: 26rpx ;
+}
+.sign_mains{
+    border-bottom: solid 2rpx #E5E5E5;
+    padding:30rpx 36rpx;
+    background-color: #ffffff;
+}
+.sign_info_left{
+    width: 242rpx;
+    display: flex;
+    align-items: center;
+}
+.sign_re{
+    width: 7rpx;
+    height: 7rpx;
+    background: #C7000A;
+    border-radius: 50%; 
+    margin-right: 14rpx;
+}
+
+
+.btn_pad{
+    padding: 55rpx 0;
+}
+.exam_sin_btn {
+    height: 80rpx;
+    background: #101010;
+    border-radius: 10rpx;
+    margin: 0 36rpx;
+}
