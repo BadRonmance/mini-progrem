@@ -18,6 +18,6 @@ export default {
       home_more: "/assets/images/index/more.png",
       train_coach: "/assets/images/train/coach.png",
       train_coachActive: "/assets/images/train/coach_active.png",
-      train_extension: "/assets/images/train/coach.png",
-      train_extensionActive: "/assets/images/train/coach_active.png",
+      train_extension: "/assets/images/train/extension.png",
+      train_extensionActive: "/assets/images/train/extension_active.png",
 }

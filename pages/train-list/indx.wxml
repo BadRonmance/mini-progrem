@@ -1,20 +1,24 @@
 <!--教练/推广员培训列表-->
 <view class="train fon_28 color_3">
-  <view class="titleBox flex-bet">
-    <view class="flex-y-center">
-      <image mode="aspectFit" src="{{imgConfig.train_coachActive}}"></image>
-      教练员培训
+  <view style="display:{{isshowTwo?'none':'block'}}">
+    <view class="titleOne fon_30 flex-bet">
+      <block wx:for="{{tabbarList.leftText}}" wx:key="index">
+        <view class="flex-center tabbarItem {{activeIndex==index?'active':''}}" data-index="{{index}}" bindtap="tabbarChange">
+          <image mode="aspectFit" src="{{activeIndex==index?tabbarList.icon[index].selectsrc:tabbarList.icon[index].src}}"></image>
+          {{item}}
+        </view>
+      </block>
     </view>
-    <view class="flex-y-center">
-      <image mode="aspectFit" src="{{imgConfig.train_extensionActive}}"></image>
-      推广员培训
+    <view class="pa_lr-36 chioce">
+      <city-level-choice choice-system="{{bigChoiceSystem}}" value="{{chioceValue}}" bindconfirm="confirm" bindlevelChange="levelChange"></city-level-choice>
     </view>
   </view>
-  <view class="titleBox flex-bet pa_lr-36">
+  <!-- style="display:{{isshowTwo?'flex':'none'}}" -->
+  <view class="titleBox wid fixed_top flex-bet pa_lr-36 {{isshowTwo?'activeClass':''}}">
     <view-title class="tabbar" system="{{tabbarList}}"></view-title>
-    <city-level-choice choice-system="{{choiceSystem}}" bindconfirm="confirm" bindlevelChange="levelChange"></city-level-choice>
+    <city-level-choice choice-system="{{choiceSystem}}" value="{{chioceValue}}" bindconfirm="confirm" bindlevelChange="levelChange"></city-level-choice>
   </view>
-  <view class="cont">
+  <view class="cont" style="padding-top:{{isshowTwo?'125rpx':''}}">
     <grading-train-list data="{{trainData}}"></grading-train-list>
   </view>
 </view>

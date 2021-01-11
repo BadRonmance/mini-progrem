@@ -741,13 +741,9 @@
 }
 
 .gobyndsingle {
-    display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
-    word-break: break-all;
-    white-space: normal !important;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
+    white-space: nowrap;
 }
 
 

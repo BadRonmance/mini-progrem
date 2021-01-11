@@ -1,14 +1,18 @@
 <view class="flex-y-center screenBox" style="width:{{choiceSystem.width}};background:{{choiceSystem.background}}">
-  <view class="address flex-y-center pa_r-8" style="{{choiceSystem.pa_l30}}" bindtap="showCityOpt">
+  <view class="address flex-center pa_r-8" bindtap="showCityOpt">
     <image wx:if="{{choiceSystem.noIcon}}" style="display:{{positionIcon}}" mode="aspectFit" src="{{imgConfig.home_address2}}"></image>
-    <view class="gobyndsingle">{{currentCity}}</view>
+    <view class="gobyndsingle">
+      <!-- {{currentCity}} -->
+      {{value.address.label}}
+    </view>
   </view>
   <view class="pa_l-8">
     <picker bindchange="levelChange" value="{{levelList[index].value}}" data-text="{{levelList[index]}}" range-key="{{'label'}}" range="{{levelList}}">
       <view class="picker">
-        <view class="level" style="{{choiceSystem.pa_l22}}"  bindtap="showlevelOpt">
-          {{levelText}}
-          <van-icon name="arrow-down" wx:if="{{choiceSystem.noIcon}}"/>
+        <view class="level flex-center" bindtap="showlevelOpt">
+          <!-- {{levelText}} -->
+          {{value.level.label}}
+          <van-icon class="icon" name="arrow-down" wx:if="{{choiceSystem.noIcon}}"/>
         </view>
       </view>
     </picker>

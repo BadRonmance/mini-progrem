@@ -9,9 +9,18 @@ Component({
       value: {
         width: '426rpx',
         background: '#F5F5F5',
-        pa_l30: 'padding-left:30rpx',
-        pa_l22: 'padding-left:22rpx',
         noIcon: true
+      }
+    },
+    value:{
+      type: Object,
+      value: {
+        address: {
+          label: '北京市',val: '110100'
+        },
+        level: {
+          label: 'mini一级',val: '1'
+        }
       }
     }
   },
@@ -20,7 +29,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    currentCity: app.globalData.currentCity,
+    // currentCity: app.globalData.currentCity,
     imgConfig: wx.imgConfig.default,
     areaValue: '110100',
     positionIcon: 'block',
@@ -43,7 +52,7 @@ Component({
       {label: 'mini二级',value: '2'},
     ],
     index: 1,
-    levelText: 'mini一级',
+    // levelText: 'mini一级',
   },
 
   /**
@@ -66,16 +75,20 @@ Component({
       let city = data.detail[0].name == data.detail[1].name?data.detail[1].name: data.detail[0].name+' '+data.detail[1].name
       this.setData({
         showCity: 'none',
-        currentCity: city,
+        'value.address.label': city,
+        'value.address.val': data.detail[1].code,
         positionIcon: city==app.globalData.currentCity?'block':'none'
       });
-      this.triggerEvent('confirm',data.detail);
+      data.city = city;
+      this.triggerEvent('confirm',data);
     },
     levelChange(e){
       let level = this.data.levelList.find(val=>val.value == e.detail.value?val:'')
       this.setData({
-        levelText: level.label
+        'value.level.label': level.label,
+        'value.level.val': level.value
       });
+      e.detail.label = level.label;
       this.triggerEvent('levelChange',e.detail);
     }
   }
