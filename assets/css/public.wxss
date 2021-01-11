@@ -7,6 +7,11 @@
     padding: 18rpx;
 }
 
+.pa_lr-36 {
+    padding-left: 36rpx;
+    padding-right: 36rpx;
+}
+
 .pa_lr-18 {
     padding-left: 18rpx;
     padding-right: 18rpx;
@@ -584,7 +589,8 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.flex-y-start{
+
+.flex-y-start {
     display: flex;
     align-items: flex-start;
 }
@@ -743,13 +749,10 @@
 }
 
 .gobyndsingle {
-    display: -webkit-box;
     overflow: hidden;
+    /* 超出的文本隐藏*/
     text-overflow: ellipsis;
-    word-break: break-all;
-    white-space: normal !important;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
+    white-space: nowrap;
 }
 
 

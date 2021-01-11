@@ -1,0 +1,15 @@
+/* components/bg-img/index.wxss */
+@import "/assets/css/public.wxss";
+
+.bg_img {
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 0;
+}
+
+.slot_view {
+      top: 0;
+      left: 0;
+      z-index: 100;
+}

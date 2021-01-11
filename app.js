@@ -1,4 +1,5 @@
 const siteroot = require('./siteinfo.js').siteroot;
+const JsonData = require('./utils/json/index').default;
 var QQMapWX = require('./utils/qqmap-wx-jssdk.min.js');
 var qqmapsdk;
 App({
@@ -16,6 +17,7 @@ App({
         wx.config = require('./siteinfo.js')
         wx.util = require('./utils/util.js')
         wx.api = require('./API/index.js').default;
+        wx.JsonData = JsonData;
         wx.imgConfig = require('./utils/img-list.js')
     },
     /**
@@ -91,12 +93,12 @@ App({
                         console.log(res.result.ad_info);
                         let data = res.result.ad_info;
                         // if(data.province.indexOf('省') != -1){
-                            data.province = data.province.substring(0,data.province.length-1);
+                        data.province = data.province.substring(0, data.province.length - 1);
                         // }
                         // if(data.city.indexOf('市') != -1){
-                            data.city = data.city.substring(0,data.city.length-1);
+                        data.city = data.city.substring(0, data.city.length - 1);
                         // }
-                        that.globalData.currentCity = data.province == data.city?data.city:data.province+' '+data.city;
+                        that.globalData.currentCity = data.province == data.city ? data.city : data.province + ' ' + data.city;
                         console.log(that.globalData.currentCity)
                     },
                     fail: function (res) {

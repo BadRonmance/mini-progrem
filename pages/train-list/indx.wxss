@@ -3,7 +3,34 @@
 }
 .titleBox{
   height: 125rpx;
+  background: #fff;
+  z-index: -1;
   box-shadow: 0px 0px 12rpx rgba(0, 0, 0, 0.16);
+}
+.titleOne{
+  height: 125rpx;
+}
+.activeClass{
+  z-index: 100;
+  transition: all .5s;
+}
+.titleOne>view{
+  height: 100%;
+  flex: 1;
+  background: #f5f5f5;
+}
+.titleOne>.active{
+  background: #fff;
+}
+.tabbarItem{
+  transition: all .5s;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+.titleOne image{
+  width: 46rpx;
+  height: 32rpx;
+  margin-right: 5rpx;
 }
 .cont{
   margin-top: 39rpx;
@@ -11,4 +38,12 @@
 .train .tabbar{
   margin-bottom: -14rpx;
   margin-right: -36rpx;
+}
+.active{
+  font-size: 38rpx;
+  font-weight: 800;
+  color: #101010;
+}
+.chioce{
+  margin-top: 36rpx;
 }

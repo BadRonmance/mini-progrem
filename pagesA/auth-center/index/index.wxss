@@ -1,0 +1,21 @@
+/* pagesA/auth-center/index/index.wxss */
+.auth_title {
+      height: 324rpx;
+      width: 100%;
+}
+
+.auth_title_text {
+      padding-top: 40rpx;
+}
+
+.auth_list {
+      height: 400rpx;
+      transform: translateY(-100rpx);
+}
+
+.auth_item {
+      background: #E3BF65;
+      margin-bottom: 34rpx;
+      padding: 25rpx 32rpx;
+      border-radius: 20rpx;
+}
