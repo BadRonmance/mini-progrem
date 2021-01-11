@@ -1,0 +1,40 @@
+<view id="payorder_detail" class="">
+    <view class="fon_38 color_0  fon_wei t_c order_titles">订单已生成</view>
+    <!-- 订单信息 -->
+    <view class="order_box">
+        <view class="spon_se flex">
+            <text class="fon_28 color_3 color_38 order_label">订单编号</text>
+            <text class="fon_28 color_3">DD19879072390739070123</text>
+        </view>
+        <view class="spon_se flex">
+            <text class="fon_28 color_3 color_38 order_label">订单信息</text>
+            <text class="fon_28 color_3">运动员mini级考级认证</text>
+        </view>
+        <view class="spon_se flex">
+            <text class="fon_28 color_3 color_38 order_label">订单金额</text>
+            <text class="fon_28 color_3">￥500.00元</text>
+        </view>
+
+        <view class="spon_se flex align-centes">
+            <text class="fon_28 color_3 color_38 order_label">支付方式</text>
+            <view class="flex">
+                <view class="pay_types flex-center  {{payTypes=='weixin'?'paytype':''}}" data-type='weixin'  bindtap="payTypeFun">
+                    <image src="{{imgConfig.}}" mode="aspectFit" class="pay_wecharticon"></image>
+                    <text class="fon_28 color_3">微信</text>
+                </view>
+                <view class="pay_types flex-center {{payTypes=='bank'?'paytype':''}}" data-type="bank" bindtap="payTypeFun">
+                    <image src="../../../assets/images/exam/bank.png" mode="aspectFit" class="pay_bankicon"></image>
+                    <text class="fon_28 color_3">银联</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 开票 -->
+    <view class="study_con sty_boxs">
+        <view>开票</view>
+        <image mode="aspectFit" class="more_con" src="../../../assets/images/index/more.png"></image>
+    </view>
+    <view class="btn_pad">
+        <view class="exam_sin_btn fon_28 color_f fon_wei flex-center" bindtap="paynowFun">立即付款</view>
+    </view>
+</view>

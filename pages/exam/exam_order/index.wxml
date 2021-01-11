@@ -1,0 +1,36 @@
+<view id="exambox_sign" class="">
+    <!-- 详情图 -->
+    <swiper height="{{banner.height}}" system="{{banner.system}}" data="{{banner.swiperData}}">
+    </swiper>
+    <!-- 标题 -->
+    <view class="fon_38 color_10 exam_title fon_wei ba_f">mini级教练员北京第二期</view>
+    <!-- 价格 -->
+    <view class="ba_f flex price_box">
+        <view class="flex sign_price">
+            <text class="fon_24 color_6">早鸟价：</text>
+            <text class="det_price fon_38 fon_wei-800">￥125</text>
+        </view>
+        <view class="flex sign_price sign_price_two">
+            <text class="fon_24 color_6">常规价：</text>
+            <text class="det_price fon_38 fon_wei-800">￥185</text>
+        </view>
+    </view>
+    <!-- 详细信息 -->
+    <view class="space_wei"></view>
+    <view class="ba_f sign_infos">
+        <view class="fon_38 color_3 fon_wei padding_left">填写信息</view>
+        <view class="flex sign_mains" wx:for="{{signInfo}}">
+            <view class="sign_info_left flex">
+                <text class="sign_re"></text>
+                <text class="sign_names fon_28 color_6">{{item.label}}</text>
+            </view>
+            <view class="sign_info_right fon_28 color_3s">
+                {{item.value}}
+            </view>
+        </view>
+    </view>
+    <!-- 生成订单 -->
+    <view class="btn_pad">
+        <view class="exam_sin_btn fon_28 color_f fon_wei flex-center" bindtap="producet_order">生成订单</view>
+    </view>
+</view>

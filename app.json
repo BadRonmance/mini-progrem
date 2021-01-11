@@ -1,5 +1,10 @@
 {
   "pages": [
+    "pages/exam/exam_detail/index",
+    "pages/exam/exam_pay/index",
+    "pages/exam/exam_order/index",
+    "pages/certificate/certificate_index/index",
+    "pages/certificate/certificate_query/index",
     "pages/index/index",
     "pages/personal/index",
     "pages/login/index",

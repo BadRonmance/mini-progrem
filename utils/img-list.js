@@ -20,4 +20,10 @@ export default {
       train_coachActive: "/assets/images/train/coach_active.png",
       train_extension: "/assets/images/train/coach.png",
       train_extensionActive: "/assets/images/train/coach_active.png",
+      order_bank:"/assets/images/order/bank.png",
+      order_weixin:"/assets/images/order/wechart.png",
+      order_success:"/assets/images/order/success.png",
+      order_right:"/assets/images/order/right.png",
+      order_sacn:"/assets/images/order/scan_code.png"
+
 }
