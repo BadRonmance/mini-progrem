@@ -100,3 +100,11 @@
     border-radius: 10rpx;
     margin: 0 36rpx;
 }
+.order_imgs{
+    display: flex;
+    justify-content: center;
+
+}
+.order_imgs image{
+    width: 320rpx;
+}

@@ -89,6 +89,11 @@
           "pathName": "pages/train-list/indx",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/certificate/certificate_query/index",
+          "pathName": "pages/certificate/certificate_query/index",
+          "scene": null
         }
       ]
     }

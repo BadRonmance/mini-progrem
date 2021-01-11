@@ -1,8 +1,8 @@
 <view id="certificate_all" class="pa_18 rel">
     <view class="body rel">
-        <!-- 自定义头部 START -->
-        <custom-head style="{{style}}"></custom-head>
-        <!-- 自定义头部 END -->
+        <view class="scan_boxs">
+            <image src="{{imgConfig.order_scan}}" class="scan_img" mode="aspectFit"></image>
+        </view>
         <view class="certificate_nav">
             <view class="query_cer">证书查询</view>
             <view class="query_lettcer">CERTIFICATE</view>
