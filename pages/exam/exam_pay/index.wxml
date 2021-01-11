@@ -19,11 +19,11 @@
             <text class="fon_28 color_3 color_38 order_label">支付方式</text>
             <view class="flex">
                 <view class="pay_types flex-center  {{payTypes=='weixin'?'paytype':''}}" data-type='weixin'  bindtap="payTypeFun">
-                    <image src="{{imgConfig.}}" mode="aspectFit" class="pay_wecharticon"></image>
+                    <image src="{{imgConfig.order_weixin}}" mode="aspectFit" class="pay_wecharticon"></image>
                     <text class="fon_28 color_3">微信</text>
                 </view>
                 <view class="pay_types flex-center {{payTypes=='bank'?'paytype':''}}" data-type="bank" bindtap="payTypeFun">
-                    <image src="../../../assets/images/exam/bank.png" mode="aspectFit" class="pay_bankicon"></image>
+                    <image src="{{imgConfig.order_bank}}" mode="aspectFit" class="pay_bankicon"></image>
                     <text class="fon_28 color_3">银联</text>
                 </view>
             </view>
