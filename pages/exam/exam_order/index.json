@@ -1,0 +1,11 @@
+{
+    "usingComponents": {
+        "swiper": "../../../components/swiper/index",
+        "van-icon": "@vant/weapp/icon/index"
+    },
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#101010",
+    "navigationBarTitleText": "考级报名",
+    "navigationBarTextStyle": "white"
+}

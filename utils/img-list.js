@@ -1,3 +1,11 @@
+/*
+ * @Description: 
+ * @Version: 
+ * @Author: 兰双
+ * @LastEditTime: 2021-01-11 16:08:24
+ * @LastEditors: Please set LastEditors
+ * @Date: 2021-01-08 10:50:13
+ */
 export default {
       tabbar_logo: "/assets/images/index/logo.png",
       tabbar_home: "/assets/images/tabbar/index.png",
@@ -20,4 +28,9 @@ export default {
       train_coachActive: "/assets/images/train/coach_active.png",
       train_extension: "/assets/images/train/extension.png",
       train_extensionActive: "/assets/images/train/extension_active.png",
+      order_bank:"/assets/images/order/bank.png",
+      order_weixin:"/assets/images/order/wechart.png",
+      order_success:"/assets/images/order/success.png",
+      order_right:"/assets/images/order/right.png",
+      order_sacn:"/assets/images/order/scan_code.png"
 }

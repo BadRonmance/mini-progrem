@@ -1,0 +1,65 @@
+<view id="certificate_query" class="rel">
+    <!-- 搜索栏 -->
+    <view class="cer_nav">
+        <!-- 表单 START -->
+        <view class="cer_nav_form">
+            <view class="cer_nav_left">
+                <ebring-form formStyle="{{formStyle}}" labelStyle="{{labelStyle}}" formData="{{formData}}"
+                    bind:passValue='passValue'>
+                </ebring-form>
+            </view>
+            <view class="cer_nav_right">
+                <view class="right_line"></view>
+                <view class="view_search">搜索</view>
+            </view>
+        </view>
+        <!-- 表单 END -->
+        <view class="real_info fon_26 color_3" wx:if="{{showDetails}}">
+            <text>高学成</text>
+            <text class="info_sex">女</text>
+            <text>623569854125698741</text>
+        </view>
+    </view>
+    <!-- 详情 -->
+    <view class="person_info" wx:if="{{showDetails}}">
+        <view class="fon_26 comm_line">
+            <text class="color_6">推广员等级：</text>
+            <text class="color_3">3级</text>
+        </view>
+        <view class="fon_26 comm_line">
+            <text class="color_6">等级证书编号：</text>
+            <text class="color_3">IG832943833242</text>
+        </view>
+        <view class="fon_26 comm_line">
+            <text class="color_6">等级证书时间：</text>
+            <text class="color_3">2020.12.16</text>
+        </view>
+        <view class="fon_26 comm_line">
+            <text class="color_6">结业证书编号：</text>
+            <text class="color_3">IG832943833242</text>
+        </view>
+        <view class="fon_26 comm_line">
+            <text class="color_6">结业证书时间：</text>
+            <text class="color_3">2018.12.16</text>
+        </view>
+    </view>
+    <!-- 列表 -->
+    <view class="person_list" wx:if="{{!showDetails}}">
+        <view class="fon_38 color_3 fon_wei">查询结果</view>
+        <view class="list_box">
+            <view class="person_header">
+                <view class="width_30">姓名</view>
+                <view class="width_20">性别</view>
+                <view class="width_50">身份证号</view>
+            </view>
+            <view>
+                <view class="flex person_body" wx:for="{{personList}}" bindtap="showDetailInfo">
+                    <view class="width_30">高学成</view>
+                    <view class="width_20">女</view>
+                    <view class="width_50">622822199611091165</view>
+                </view>
+            </view>
+
+        </view>
+    </view>
+</view>

@@ -1,0 +1,61 @@
+.body {
+    /* padding-bottom: 160rpx; */
+    z-index: 1000;
+}
+
+#certificate_all {
+    height: 100vh;
+    position: relative;
+    z-index: 100;
+}
+
+
+.bg_img {
+    width: 100%;
+    /* height: 100vh; */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.certificate_nav {
+    margin-top: 223rpx;
+    text-align: center;
+    color: #fff;
+
+}
+
+.query_cer {
+    font-size: 48rpx;
+    font-weight: bold;
+}
+
+.query_lettcer {
+    font-size: 29rpx;
+    font-weight: 500;
+    color: #FFFFFF;
+    opacity: 0.76;
+    padding-top: 30rpx;
+    letter-spacing: 16rpx;
+}
+.query_twos{
+    padding-top: 10rpx !important;
+}
+
+.certificate_form {
+    margin: 0 67rpx 0 62rpx;
+}
+
+.btn_query {
+    width: 402rpx;
+    height: 80rpx;
+    background: #E3BF68;
+    border-radius: 40rpx;
+    font-size: 34rpx;
+    font-weight: 600;
+    color: #101010;
+    line-height: 80rpx;
+    margin-top: 104rpx;
+}
+
+
+

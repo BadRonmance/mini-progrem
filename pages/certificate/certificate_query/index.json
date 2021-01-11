@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "ebring-form": "/components/form/index"
+    },
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#101010",
+    "navigationBarTitleText": "证书查询",
+    "navigationBarTextStyle": "white"
+}

@@ -1,0 +1,102 @@
+#payorder_detail {
+    width: 100%;
+    background-color: #F5F5F5;
+    height: 100vh;
+    overflow: auto;
+}
+
+.order_box {
+    padding-left: 84rpx;
+}
+
+.order_titles {
+    margin-bottom: 50rpx;
+}
+
+.color_38 {
+    color: #383838;
+}
+
+.order_label {
+    margin-right: 42rpx;
+    width: 112rpx;
+}
+
+.pay_bankicon {
+    width: 52rpx;
+    height: 30rpx;
+}
+
+.pay_wecharticon {
+    width: 57rpx;
+    height: 48rpx;
+}
+
+.spon_se {
+    margin-bottom: 37rpx;
+}
+.spon_se:last-child{
+    margin-bottom: 40rpx;
+}
+
+
+.paytype {
+    width: 194rpx;
+    height: 84rpx;
+    background: #FFFFFF;
+    border: 2rpx solid #E3BF65;
+}
+
+.study_con {
+    height: 100rpx;
+    box-shadow: 0px 0px 12rpx rgba(0, 0, 0, 0.16);
+    border-radius: 12rpx;
+    padding: 0 35rpx 0 48rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 36rpx;
+    background-color: #ffffff;
+}
+.pay_types{
+    width: 194rpx;
+    height: 84rpx;
+}
+.pay_first{
+    margin-right: 60rpx;
+}
+.align-centes{
+    align-items: center;
+}
+
+.study_con view {
+    font-size: 38rpx;
+    font-weight: bold;
+    color: #333333;
+
+}
+
+.more_con {
+    width: 30rpx;
+    height: 44rpx;
+}
+
+.sty_boxs {
+    margin-bottom: 78rpx;
+}
+
+.spon_icon {
+    margin-right: 20rpx;
+}
+
+
+.btn_pad {
+    padding-bottom: 100rpx;
+}
+
+.exam_sin_btn {
+    height: 80rpx;
+    background: #101010;
+    border-radius: 10rpx;
+    margin: 0 36rpx;
+}

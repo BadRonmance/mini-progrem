@@ -1,0 +1,93 @@
+#certificate_query {
+    width: 100%;
+    background: #F5F5F5;
+    height: 100vh;
+}
+
+.cer_nav {
+    padding: 27rpx 36rpx 31rpx 36rpx;
+    background-color: #ffffff;
+}
+
+.cer_nav_form {
+    height: 88rpx;
+    background: #F5F5F5;
+    opacity: 1;
+    border-radius: 8rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.cer_nav_left{
+    width: 75%;
+}
+.cer_nav_right{
+    display: flex;
+    padding:28rpx 27rpx 27rpx 0;
+    
+}
+.right_line {
+    height: 43rpx;
+    border: 1rpx solid #E5E5E5;
+    width:1rpx;
+    margin-right: 31rpx;
+}
+
+.view_search {
+    font-size: 28rpx;
+    font-weight: 400;
+    color: #E4B646;
+    
+}
+.real_info{
+
+    padding:31rpx 0 0rpx 0
+}
+.info_sex{
+    padding:0 40rpx
+}
+.person_info{
+    padding: 32rpx 0 18rpx 16rpx;
+    background-color: #ffffff;
+    border-radius: 18rpx;
+    margin:38rpx 36rpx 0 36rpx
+}
+.comm_line{
+    padding-bottom: 15rpx;
+}
+.person_list{
+    margin:45rpx 36rpx 38rpx 36rpx
+}
+.list_box{
+    padding-top: 28rpx;
+}
+.person_header{
+    height: 60rpx;
+    background:#101010;
+    font-size: 28rpx;
+    color: #E4B646;
+    display: flex;
+    align-items: center;
+    line-height: 60rpx;
+    padding:0 37rpx;
+}
+.width_20{
+    width: 20%;
+}
+.width_30{
+    width: 30%;
+}
+.width_50{
+    width: 50%;
+}
+
+.person_body{
+    height: 80rpx;
+    border-bottom: solid 2rpx #F5F5F5;
+    display: flex;
+    align-items: center;
+    line-height: 60rpx;
+    padding:0 37rpx;
+    color: #333333;
+    font-size: 26rpx;
+    background-color: #ffffff;
+}

@@ -1,0 +1,36 @@
+<view id="exambox_ID" class="">
+    <!-- 详情图 -->
+    <swiper height="{{banner.height}}" system="{{banner.system}}" data="{{banner.swiperData}}">
+    </swiper>
+    <!-- 标题 -->
+    <view class="fon_38 color_10 exam_title fon_wei ba_f">mini级教练员北京第二期</view>
+    <view class="det_price fon_38 fon_wei-800 ba_f">￥125</view>
+    <!-- 主办方详细信息 -->
+    <view class="sponsor_box">
+        <view class="fon_26 color_3 spon_se">主办方：FIBA</view>
+        <view class="fon_26 color_3 spon_se">报名时间：2020.12.31 09:00~2021.01.31 09:00 </view>
+        <view class="fon_26 color_3 spon_se">考级时间：2020.09.10～2020.10.10</view>
+        <view class="fon_26 color_3 spon_se">考级地点：西安市长安区春田篮场馆区春田篮场馆</view>
+    </view>
+    <!-- 学习资料 -->
+    <view class="study_con sty_boxs">
+        <view>学习资料</view>
+        <image mode="aspectFit" class="more_con" src="../../../assets/images/index/more.png"></image>
+    </view>
+    <!-- 推荐运动员 -->
+    <view class="study_con">
+        <view class="flex">
+            <van-icon name="friends-o" class="spon_icon" />
+            <view>推荐运动员</view>
+        </view>
+        <image mode="aspectFit" class="more_con" src="../../../assets/images/index/more.png"></image>
+    </view>
+    <!-- 考级须知 -->
+    <view class="fon_38 color_3 fon_wei exam_ques">考级须知</view>
+    <view class="fon_26 color_3 exam_deta">这是培训须知这是培训须知这是培训须知这是培训须知
+        这是培训须知这是培训须知这是培训须知这是培训须知
+        这是培训须知这是培训须知。</view>
+  <view class="btn_pad">
+    <view class="exam_sin_btn fon_28 color_f fon_wei flex-center" bindtap="signUpFun">报名</view>
+  </view>
+</view>
