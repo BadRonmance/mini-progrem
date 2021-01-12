@@ -308,9 +308,11 @@
 .color_9 {
     color: #999;
 }
+
 .color_38 {
     color: #383838;
 }
+
 .color_red {
     color: #FF0909;
 }
@@ -673,6 +675,11 @@
 
 .wid {
     width: 100%;
+}
+
+
+.wid_50 {
+    width: 50%;
 }
 
 .hei {

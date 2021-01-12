@@ -1,13 +1,15 @@
 page {
   background: #fff;
 }
-.tabBox{
-  height: 240rpx;
+
+.tabBox {
+  /* height: 240rpx; */
 }
 
 .titleOne {
   height: 125rpx;
 }
+
 .titleOne>view {
   height: 100%;
   flex: 1;
@@ -29,32 +31,49 @@ page {
   height: 32rpx;
   margin-right: 5rpx;
 }
-.tabbarOne{
+
+.tabbarOne {
   /* background: #f00; */
   /* height: 100%; */
 }
+
 .tabbarTwo {
   height: 125rpx;
   background: #fff;
   /* background: #0f0; */
   z-index: -1;
   opacity: 0;
+  top: -124rpx;
   box-shadow: 0px 0px 12rpx rgba(0, 0, 0, 0.16);
 }
+
 .tabbarTwo .tabbar {
   margin-bottom: -14rpx;
   margin-right: -36rpx;
 }
 
-.showTwoView .tabbarOne{
-  height: 0;
-  transition: all .5s;
+.showTwoView .tabbarOne {}
+
+.showTwoView .tabbarOne .chioce {
+  width: 260rpx;
+  margin: -125rpx 0 0 calc(100% - 260rpx);
+  transition: all .5s ease-out;
 }
-.showTwoView .tabbarTwo{
+
+.showTwoView .tabbarTwo {
+  width: 100%;
   z-index: 100;
   opacity: 1;
+  top: 0;
   transition: all .5s;
 }
+
+/* .hideTwoView .tabbarTwo{
+  width: 0;
+  left: 50%;
+  transition: all .5s;
+} */
+
 /* .activeClass {
   z-index: 100;
   opacity: 1;
@@ -70,26 +89,88 @@ page {
 .hideTwoView{
   height: 240rpx;
 } */
-.showTwoView .chioce{
-
-}
 
 .cont {
   margin-top: 39rpx;
   /* transition: height .5s; */
 }
 
-.active {
+.chioce {
+  margin-top: 36rpx;
+}
+
+.default_view,
+.default_view_scroll {
+  background: #ffffff;
+  transition: all .4s;
+}
+
+/* 测试动画 */
+.default_view {
+  height: 240rpx;
+}
+
+.default_view_scroll {
+  height: 124rpx;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #f9f9f9;
+}
+
+.state_view {
+
+  transition: all .4s;
+}
+
+.default_view .state_view {
+  width: 100%;
+  height: 124rpx;
+}
+
+.default_view .default_view_state {
+  line-height: 124rpx;
+}
+
+
+.default_view_scroll .state_view {
+  width: 60%;
+  height: 100%;
+}
+
+.default_view_scroll .default_view_state {
+  line-height: 124rpx;
+}
+
+.default_view_image {
+  width: 46rpx;
+  height: 32rpx;
+  margin-right: 5rpx;
+}
+
+.default_view .active {
+  transition: all .4s;
   font-size: 38rpx;
   font-weight: 800;
   color: #101010;
 }
 
-.chioce {
-  margin-top: 36rpx;
+._chioce {
+  height: 124rpx;
+  transition: all .4s;
+  background: red;
 }
+.default_view ._chioce{
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 124rpx;
 
-
-
-
-
+}
+.default_view_scroll ._chioce{
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+}
