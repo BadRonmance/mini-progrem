@@ -6,9 +6,11 @@ Component({
       properties: {
             labelStyle: {
                   type: Object,
-                  value: {
-                        align: "t_l",
-                  }
+                  observer: function (val) {
+                        this.setData({
+                              labelStyleValue: wx.util.convertStyle(val)
+                        });
+                  },
             },
             isRequire: {
                   type: Boolean,
@@ -19,13 +21,9 @@ Component({
                   type: ''
             },
             icon: {
-                  type: String,
+                  type: Object,
                   type: ''
-            },
-            labelIcon: {
-                  type: Boolean,
-                  type: false
-            },
+            }
       },
 
       /**

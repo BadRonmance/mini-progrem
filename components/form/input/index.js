@@ -10,6 +10,10 @@ Component({
                         align: "t_l",
                   }
             },
+            placeholderStyle: {
+                  type: String,
+                  value: ''
+            },
             data: {
                   type: Object,
                   value: {

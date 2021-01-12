@@ -48,6 +48,11 @@ Component({
        * 组件的方法列表
        */
       methods: {
-
+            cancel() {
+                  this.triggerEvent('cancel')
+            },
+            confirm(e) {
+                  this.triggerEvent('confirm', e.detail.values);
+            }
       }
 })

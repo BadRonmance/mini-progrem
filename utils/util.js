@@ -1,3 +1,4 @@
+const app = getApp()
 const tabbar = require('../siteinfo.js').tabbar
 const PAGE_TYPE = [{
     type: "0",
@@ -119,13 +120,65 @@ function commentTimeHandle(dateStr) {
         return dateStr;
     }
 }
+
+function convertStyle(val) {
+    let result = []
+    Object.entries(val).map(item => {
+        result.push(`${item[0]}:${item[1]}`)
+    })
+    return result.join(";")
+}
+class Point {
+    start() {
+        setTimeout(() => {
+            wx.showLoading({
+                title: '图片上传中',
+            })
+            this.watchTime()
+        }, 1000)
+    }
+    watchTime() {
+        setTimeout(() => {
+            this.file()
+        }, 10000)
+    }
+    end() {
+        wx.hideLoading()
+        wx.hideToast()
+    }
+    success() {
+        wx.showToast({
+            icon: "success",
+            mask: true,
+            duration: 2000,
+            title: '图片上传成功'
+        })
+        setTimeout(() => {
+            this.end()
+        }, 2000)
+    }
+    file() {
+        wx.hideLoading()
+        wx.showToast({
+            icon: "none",
+            mask: true,
+            duration: 2000,
+            title: '图片上传失败'
+        })
+        setTimeout(() => {
+            this.end()
+        }, 2000)
+    }
+}
 module.exports = {
     dataType,
+    Point,
     commentTimeHandle,
     formatTime: formatTime,
     formatDate,
     formatDateB,
     timeStamp,
     pageTest,
-    clientCode
+    clientCode,
+    convertStyle
 }

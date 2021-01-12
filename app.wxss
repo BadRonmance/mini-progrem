@@ -1,6 +1,7 @@
 @import "./assets/css/public.wxss";
 @import "./assets/css/iconfont.wxss";
 @import "./assets/css/button.wxss";
+
 page {
     font-family: PingFang-SC-Bold;
     width: 100%;
@@ -23,4 +24,8 @@ view {
     border-radius: 50px;
     font-size: 34rpx;
     font-weight: bold;
+}
+
+.default_color {
+    color: #808080;
 }

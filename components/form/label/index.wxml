@@ -1,11 +1,11 @@
-<view class="wid {{labelStyle.align}}" style="width:{{labelStyle.width}}" wx:if="{{!labelIcon}}">
-      <view class="color_red fon_wei fon_30 from_label_requireIcon dis_in_center" wx:if="{{isRequire}}">
+<view class="wid" style="{{labelStyleValue}}" wx:if="{{icon.labelIcon.isShow}}">
+      <form-icon name="{{icon.labelIcon.class}}" />
+</view>
+<view class="wid" style="{{labelStyleValue}}" wx:else>
+      <view class="color_e3 fon_wei fon_30 from_label_requireIcon dis_in_center" wx:if="{{isRequire}}">
             ·
       </view>
       <view class="dis_in_center">
-            {{label}}：
+            {{label}}
       </view>
-</view>
-<view wx:else class="wid  {{labelStyle.align}}" style="width:{{labelStyle.width}}">
-      <form-icon name="{{icon}}" />
 </view>

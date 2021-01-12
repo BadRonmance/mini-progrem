@@ -3,6 +3,7 @@
 
 .from_label {
   height: 50rpx;
+  line-height: 42rpx;
 }
 
 .formItem {

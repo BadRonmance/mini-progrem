@@ -13,12 +13,8 @@
 <view class="pa_lr-36">
       <!-- 表单 START -->
       <view>
-            <ebring-form formStyle="{{formStyle}}" labelStyle="{{labelStyle}}" formData="{{formData}}"
-                  bind:passValue='passValue'>
-                  <view slot="icon1" bindtap="changePWtype">
-                        <text
-                              class="iconfont {{formData[1].inputType=='text'?'iconyincang':'iconxianshi'}} color_f fon_40"></text>
-                  </view>
+            <ebring-form placeholderStyle="{{placeholderStyle}}" formStyle="{{formStyle}}" labelStyle="{{labelStyle}}"
+                  formData="{{formData}}" bind:passValue='passValue'>
             </ebring-form>
       </view>
       <!-- 表单 END -->

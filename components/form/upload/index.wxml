@@ -1,0 +1,5 @@
+<view class="primary_btn upload dis_in_center" bindtap="upload" wx:for="{{uploadData.valueData}}" wx:key="*this"
+      data-index="{{index}}">
+      <image class="wid_hei" mode="aspectFill" src="{{item.type==='placeholder'?item.placeholder:item.value}}">
+      </image>
+</view>

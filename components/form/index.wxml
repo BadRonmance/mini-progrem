@@ -1,17 +1,40 @@
 <form bindsubmit="formSubmit">
     <block wx:for="{{formData}}" wx:key="*this">
         <view class="flex formItem" style="{{formItemStyle}}">
-            <view class="flex-grow-0 from_label flex-y-center">
-                <form-label class="wid" icon="{{item.icon}}" labelStyle="{{labelStyle}}" labelIcon="{{item.labelIcon}}" isRequire="{{item.isRequire}}" label="{{item.label}}"></form-label>
+            <view class="flex-grow-0  flex-y-center">
+                <form-label class="wid from_label" icon="{{item.icon}}" labelStyle="{{labelStyle}}"
+                    labelIcon="{{item.labelIcon}}" isRequire="{{item.isRequire}}" label="{{item.label}}"></form-label>
             </view>
             <view class="flex-grow-1 flex flex-y-center {{labelStyle.contentColor}}">
                 <view class="flex-grow-1">
-                    <form-input wx:if="{{item.type=='input'}}" labelStyle="{{labelStyle}}" index="{{index}}" data="{{item}}" bind:changeValue="changeValue"></form-input>
-                    <form-textarea wx:if="{{item.type=='textArea'}}" index="{{index}}" labelStyle="{{labelStyle}}" data="{{item}}" bind:changeValue="changeValue"></form-textarea>
-                    <form-area wx:if="{{item.type=='area'}}"></form-area>
+                    <!-- input -->
+                    <block wx:if="{{item.type=='input'}}">
+                        <form-input placeholderStyle="{{phStyle}}" labelStyle="{{labelStyle}}" index="{{index}}"
+                            data="{{item}}" bind:changeValue="changeValue">
+                        </form-input>
+                    </block>
+                    <!-- textarea -->
+                    <block wx:if="{{item.type=='textArea'}}">
+                        <form-textarea index="{{index}}" labelStyle="{{labelStyle}}" data="{{item}}"
+                            bind:changeValue="changeValue">
+                        </form-textarea>
+                    </block>
+                    <!-- area -->
+                    <block wx:if="{{item.type=='area'}}">
+                        <form-area data="{{item}}" placeholderStyle="{{phStyle}}" labelStyle="{{labelStyle}}"
+                            bind:changeValue="changeValue">
+                        </form-area>
+                    </block>
+                    <!-- upload -->
+                    <block wx:if="{{item.type=='upload'}}">
+                        <form-upload></form-upload>
+                    </block>
                 </view>
-                <view class="flex-grow-0 mar_l-18" wx:if="{{item.slot&&item.slot!=''}}">
-                    <slot name="{{item.slot}}"></slot>
+                <view class="flex-grow-0 mar_l-18 flex-y-center">
+                    <view wx:if="{{item.slot&&item.slot!=''}}">
+                        <slot name="{{item.slot}}"></slot>
+                    </view>
+                    <form-icon name="{{item.icon.contentIcon.class}}" wx:if="{{item.icon.contentIcon.isShow}}" />
                 </view>
             </view>
         </view>

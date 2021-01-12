@@ -1,4 +1,6 @@
-<view>
-      点击弹出area
-      <area-picker columnsNum="{{3}}" wx:if="{{1==2}}"></area-picker>
+<view class="wid fon_30" style="{{placeholderStyle}}" catchtap="bindArea">
+      <text wx:if="{{areaValue===''}}">{{data.placeholder}}</text>
+      <text wx:else>{{areaValue}}</text>
 </view>
+<area-picker columnsNum="{{3}}" wx:if="{{pickerArea}}" style="display:{{isShow?'block':'none'}}" bind:confirm="confirm"
+      bind:cancel="cancel"></area-picker>

@@ -1,0 +1,7 @@
+/* components/form/upload/index.wxss */
+@import "/app.wxss";
+
+.upload {
+      width: 212rpx;
+      height: 130rpx;
+}

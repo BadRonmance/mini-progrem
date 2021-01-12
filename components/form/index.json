@@ -5,6 +5,8 @@
     "form-label": "./label/index",
     "form-area": "./area/index",
     "form-input": "./input/index",
-    "form-textarea": "./text-area/index"
+    "form-textarea": "./text-area/index",
+    "form-icon": "./icon/index",
+    "form-upload": "./upload/index"
   }
 }

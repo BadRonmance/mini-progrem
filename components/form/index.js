@@ -10,15 +10,19 @@ Component({
                 align: "t_l",
             }
         },
+        placeholderStyle: {
+            type: Object,
+            observer: function (val) {
+                this.setData({
+                    phStyle: wx.util.convertStyle(val)
+                });
+            },
+        },
         formStyle: {
             type: Object,
             observer: function (val) {
-                let result = []
-                Object.entries(val).map(item => {
-                    result.push(`${item[0]}:${item[1]}`)
-                })
                 this.setData({
-                    formItemStyle: result.join(";")
+                    formItemStyle: wx.util.convertStyle(val)
                 });
             },
         },
@@ -40,8 +44,8 @@ Component({
             formValue: result
         })
     },
-    created() { },
-    ready() { },
+    created() {},
+    ready() {},
     methods: {
         changeValue(e) {
             let data = e.detail
