@@ -32,5 +32,5 @@ export default {
       order_weixin:"/assets/images/order/wechart.png",
       order_success:"/assets/images/order/success.png",
       order_right:"/assets/images/order/right.png",
-      order_sacn:"/assets/images/order/scan_code.png"
+      order_scan:"/assets/images/order/scan_code.png"
 }

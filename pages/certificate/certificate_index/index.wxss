@@ -17,11 +17,20 @@
     left: 0;
     top: 0;
 }
+.scan_boxs{
+   text-align: right;
+}
+.scan_img{
+    width: 50rpx;
+    height: 50rpx;
+    margin-top: 68rpx;
+    margin-right: 60rpx;
+    
+}
 .certificate_nav {
-    margin-top: 223rpx;
+    padding-top: 106rpx;
     text-align: center;
     color: #fff;
-
 }
 
 .query_cer {

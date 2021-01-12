@@ -1,0 +1,10 @@
+<view class="cer_nav_form">
+  <view class="cer_nav_left flex-bet">
+    <input class="weui-inputs" value="{{serachValue}}"  placeholder="{{system.placeholderText}}" bindinput="changeSearch" placeholder-class="input-placeholder" />
+    <van-icon name="clear" wx:if="{{showClose}}" class="clearIcon color_9" bindtap="clearValue" />
+  </view>
+  <view class="cer_nav_right">
+    <view class="right_line"></view>
+    <view class="view_search" bindtap="searchFun">搜索</view>
+  </view>
+</view>

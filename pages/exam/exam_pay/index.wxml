@@ -1,4 +1,7 @@
 <view id="payorder_detail" class="">
+    <view class="order_imgs">
+        <image mode="aspectFit" src="{{imgConfig.order_right}}"></image>
+    </view>
     <view class="fon_38 color_0  fon_wei t_c order_titles">订单已生成</view>
     <!-- 订单信息 -->
     <view class="order_box">
@@ -32,7 +35,7 @@
     <!-- 开票 -->
     <view class="study_con sty_boxs">
         <view>开票</view>
-        <image mode="aspectFit" class="more_con" src="../../../assets/images/index/more.png"></image>
+        <image mode="aspectFit" class="more_con" src="{{imgConfig.home_more}}"></image>
     </view>
     <view class="btn_pad">
         <view class="exam_sin_btn fon_28 color_f fon_wei flex-center" bindtap="paynowFun">立即付款</view>

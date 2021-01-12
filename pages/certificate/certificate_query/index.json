@@ -1,6 +1,6 @@
 {
     "usingComponents": {
-        "ebring-form": "/components/form/index"
+        "search": "/components/search/index"
     },
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",

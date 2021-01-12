@@ -10,7 +10,24 @@
 
 .auth_list {
       height: 400rpx;
+      animation: myfirst 1s;
       transform: translateY(-100rpx);
+}
+
+.auth_list_animation {
+      /* animation-delay: 1s; */
+      /* margin-top: -100rpx; */
+      /* transform: translateY(-100rpx); */
+}
+
+@keyframes myfirst {
+      from {
+            transform: translateY(0)
+      }
+
+      to {
+            transform: translateY(-100rpx)
+      }
 }
 
 .auth_item {
