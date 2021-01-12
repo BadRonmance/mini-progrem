@@ -11,7 +11,7 @@
       </bg-img>
 </view>
 <view class="pa_lr-36">
-      <view class="auth_list">
+      <view class="auth_list auth_list_animation">
             <view class="auth_item primary_btn color_f" style="background:{{item.background}}" wx:for="{{authItemList}}"
                   wx:key="*this">
                   <view class="fon_36 pa_b-18 fon_wei ">{{item.title}}</view>
