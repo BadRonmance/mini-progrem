@@ -22,7 +22,7 @@
       bindlevelChange="levelChange"></city-level-choice>
   </view>
 </view> -->
-<view class="tabBox fon_28 color_3 {{isShowTwo?'showTwoView':'hideTwoView'}}">
+<!-- <view class="tabBox fon_28 color_3 {{isShowTwo?'showTwoView':'hideTwoView'}}">
   <view class="tabbarOne">
     <view class="titleOne fon_30 flex-bet">
       <block wx:for="{{tabbarList.leftText}}" wx:key="index">
@@ -44,7 +44,26 @@
     <city-level-choice choice-system="{{choiceSystem}}" value="{{chioceValue}}" bindconfirm="confirm"
       bindlevelChange="levelChange"></city-level-choice>
   </view>
+</view> -->
+<!-- 置空的占位符 -->
+<view class=" {{!isShowTwo?'default_view':'default_view_scroll'}}">
+  <view class="state_view dis_in_center">
+    <block wx:for="{{tabbarList.leftText}}" wx:key="index">
+      <view class="dis_in_center ba_6 t_c wid_50 default_view_state {{activeIndex==index?'active':''}}"
+        data-index="{{index}}" bindtap="tabbarChange">
+        <image wx:if="{{!isShowTwo}}" mode="aspectFit" class="default_view_image mar_r-18"
+          src="{{activeIndex==index?tabbarList.icon[index].selectsrc:tabbarList.icon[index].src}}">
+        </image>
+        {{item}}
+      </view>
+    </block>
+  </view>
+  <block>
+    <view class="_chioce dis_in_center">
+
+    </view>
+  </block>
 </view>
 <view class="cont">
   <grading-train-list data="{{trainData}}"></grading-train-list>
-</view> 
+</view>
