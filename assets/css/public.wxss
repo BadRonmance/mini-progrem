@@ -308,7 +308,9 @@
 .color_9 {
     color: #999;
 }
-
+.color_38 {
+    color: #383838;
+}
 .color_red {
     color: #FF0909;
 }

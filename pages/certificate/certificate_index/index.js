@@ -5,12 +5,13 @@ Page({
        */
       data: {
             navbarHeight: app.globalData.customHeight + 'px',
-            style: {
-                  lineText: "证书查询",
-                  background: "",
-                  textColor: "#fff",
-                  theme: "white"
-            },
+            imgConfig: wx.imgConfig.default,
+            // style: {
+            //       lineText: "证书查询",
+            //       background: "",
+            //       textColor: "#fff",
+            //       theme: "white"
+            // },
             labelStyle: {
                   align: "t_c",
                   width: "100rpx",
@@ -47,14 +48,7 @@ Page({
       change(e) {
             console.log(e)
       },
-      /**
-       * @description: 接受form组件传递过来的参数集合
-       * @version: 1.6.0
-       * @param {*} e
-       * @return {*}
-       * @author: 张泽锋
-       * @Date: 2021-01-08 14:46:22
-       */
+      // 接受form组件传递过来的参数集合
       passValue(e) {
             this.setData({
                   formValue: e.detail

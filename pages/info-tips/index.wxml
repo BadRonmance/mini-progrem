@@ -1,0 +1,10 @@
+<view id="info_tips">
+    <view class="flex-center">
+        <image src="{{imgConfig.order_success}}" class="succ_img" mode="aspectFit"></image>
+    </view>
+    <view class="fon_38 fon_wei t_c mar_b-18">{{title}}</view>
+    <view class="t_c fon_28 color_38">{{subtitle}}</view>
+    <view class="flex-center" wx:if="{{showBtn}}" data-path="{{btnLink}}" bindtap="jumpBtn">
+        <view class="fon_28 color_f fon_wei btns flex-center">{{btnText}}</view>
+    </view>
+</view>

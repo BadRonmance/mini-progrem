@@ -5,6 +5,7 @@ Page({
        */
       data: {
             navbarHeight: app.globalData.customHeight + 'px',
+            imgConfig: wx.imgConfig.default,
             banner: {
                   height: '422rpx',
                   system: {

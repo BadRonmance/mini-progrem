@@ -15,7 +15,7 @@
     <!-- 学习资料 -->
     <view class="study_con sty_boxs">
         <view>学习资料</view>
-        <image mode="aspectFit" class="more_con" src="../../../assets/images/index/more.png"></image>
+        <image mode="aspectFit" class="more_con" src="{{imgConfig.home_more}}"></image>
     </view>
     <!-- 推荐运动员 -->
     <view class="study_con">
@@ -23,14 +23,16 @@
             <van-icon name="friends-o" class="spon_icon" />
             <view>推荐运动员</view>
         </view>
-        <image mode="aspectFit" class="more_con" src="../../../assets/images/index/more.png"></image>
+        <image mode="aspectFit" class="more_con" src="{{imgConfig.home_more}}"></image>
     </view>
     <!-- 考级须知 -->
     <view class="fon_38 color_3 fon_wei exam_ques">考级须知</view>
-    <view class="fon_26 color_3 exam_deta">这是培训须知这是培训须知这是培训须知这是培训须知
+    <view class="fon_26 color_3 exam_deta">
         这是培训须知这是培训须知这是培训须知这是培训须知
-        这是培训须知这是培训须知。</view>
-  <view class="btn_pad">
-    <view class="exam_sin_btn fon_28 color_f fon_wei flex-center" bindtap="signUpFun">报名</view>
-  </view>
+        这是培训须知这是培训须知这是培训须知这是培训须知
+        这是培训须知这是培训须知。
+    </view>
+    <view class="btn_pad">
+        <view class="exam_sin_btn fon_28 color_f fon_wei flex-center" bindtap="signUpFun">报名</view>
+    </view>
 </view>

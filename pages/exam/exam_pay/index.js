@@ -13,7 +13,7 @@ Page({
       paynowFun() {
             // 付款成功之后跳转到这个页面
             wx.navigateTo({
-                  url: 'pages/info-tips/index',
+                  url: '../../info-tips/index?title=提交成功&&subtitle=审核详情及缴费可在 我的-我的考级中心 中查看&&showBtn=true&&btnText=返回考级详情&&btnLink=../exam/exam_detail/index&&headerTitle=考级报名'
             })
       },
       // 切换付款方式

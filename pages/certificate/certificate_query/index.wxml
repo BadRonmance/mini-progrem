@@ -2,17 +2,7 @@
     <!-- 搜索栏 -->
     <view class="cer_nav">
         <!-- 表单 START -->
-        <view class="cer_nav_form">
-            <view class="cer_nav_left">
-                <ebring-form formStyle="{{formStyle}}" labelStyle="{{labelStyle}}" formData="{{formData}}"
-                    bind:passValue='passValue'>
-                </ebring-form>
-            </view>
-            <view class="cer_nav_right">
-                <view class="right_line"></view>
-                <view class="view_search">搜索</view>
-            </view>
-        </view>
+        <search system="{{searchSet}}"></search>
         <!-- 表单 END -->
         <view class="real_info fon_26 color_3" wx:if="{{showDetails}}">
             <text>高学成</text>
