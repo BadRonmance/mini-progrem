@@ -11,18 +11,20 @@
       </bg-img>
 </view>
 <view class="pa_lr-36">
-      <view class="auth_list auth_list_animation">
-            <view class="auth_item primary_btn color_f" style="background:{{item.background}}" wx:for="{{authItemList}}"
-                  wx:key="*this">
-                  <view class="fon_36 pa_b-18 fon_wei ">{{item.title}}</view>
-                  <view class="flex pa_t-8 fon_26">
-                        <view class="flex-grow-1">
-                              {{item.desc}}
-                        </view>
-                        <view class="flex-grow-0">
-                              more
+      <view class="auth_list">
+            <block wx:for="{{authItemList}}" wx:key="*this">
+                  <view class="auth_item primary_btn color_f" style="background:{{item.background}}"
+                        catchtap="itemRouter" data-path="{{item.path}}">
+                        <view class="fon_36 pa_b-18 fon_wei ">{{item.title}}</view>
+                        <view class="flex pa_t-8 fon_26">
+                              <view class="flex-grow-1">
+                                    {{item.desc}}
+                              </view>
+                              <view class="flex-grow-0">
+                                    more
+                              </view>
                         </view>
                   </view>
-            </view>
+            </block>
       </view>
 </view>

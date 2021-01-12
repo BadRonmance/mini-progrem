@@ -1,0 +1,25 @@
+<view class="auth_title">
+      <bg-img class="wid_hei">
+            <view class="color_e3 auth_title_text pa_lr-36">
+                  <view class="pa_b-18 fon_38 fon_wei">
+                        FIBA官方认证
+                  </view>
+                  <view class="pa_t-18 fon_26">
+                        培训机构认证需先通过审核，审核会在X个工作日内完成。
+                  </view>
+            </view>
+      </bg-img>
+</view>
+<view class="pa_lr-36">
+      <!-- 表单 START -->
+      <view>
+            <ebring-form formStyle="{{formStyle}}" labelStyle="{{labelStyle}}" formData="{{formData}}"
+                  bind:passValue='passValue'>
+                  <view slot="icon1" bindtap="changePWtype">
+                        <text
+                              class="iconfont {{formData[1].inputType=='text'?'iconyincang':'iconxianshi'}} color_f fon_40"></text>
+                  </view>
+            </ebring-form>
+      </view>
+      <!-- 表单 END -->
+</view>

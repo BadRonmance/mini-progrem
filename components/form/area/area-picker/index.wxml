@@ -1,0 +1,2 @@
+<van-area class="area_picker" columns-num="{{columnsNum}}" area-list="{{ areaList }}" bind:confirm="confirm"
+      bind:cancel="cancel" />

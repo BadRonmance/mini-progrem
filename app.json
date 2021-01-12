@@ -1,83 +1,85 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/exam/exam_detail/index",
-        "pages/exam/exam_pay/index",
-        "pages/info-tips/index",
-        "pages/exam/exam_order/index",
-        "pages/certificate/certificate_index/index",
-        "pages/certificate/certificate_query/index",
-        "pages/personal/index",
-        "pages/mechanismAuthentication/index",
-        "pages/login/index",
-        "pages/login/sign-in/index",
-        "pages/login/register/index",
-        "pages/login/forget-pw/index",
-        "pages/athlete-grading/index",
-        "pages/news/index",
-        "pages/news/detail/index",
-        "pages/train-list/indx"
-    ],
-    "subpackages": [{
-            "root": "pagesA",
-            "pages": [
-                "mine-news/list/index",
-                "mine-news/detail/index",
-                "affiliated-institution/index",
-                "auth-center/index/index"
-            ]
-        },
-        {
-            "root": "pagesB",
-            "name": "pack2",
-            "pages": [
-                "course/index"
-            ]
-        }
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "FIBR平台",
-        "navigationBarTextStyle": "black"
-    },
-    "usingComponents": {
-        "custom-header": "./components/custom-header/index",
-        "scroll-top": "./components/scroll-top/index",
-        "van-button": "@vant/weapp/button/index",
-        "van-uploader": "@vant/weapp/uploader/index",
-        "van-transition": "@vant/weapp/transition/index",
-        "van-datetime-picker": "@vant/weapp/datetime-picker/index",
-        "van-tab": "@vant/weapp/tab/index",
-        "van-tabs": "@vant/weapp/tabs/index",
-        "van-icon": "@vant/weapp/icon/index"
-    },
-    "permission": {
-        "scope.userLocation": {
-            "desc": "你的位置信息将用于小程序位置接口的效果展示"
-        }
-    },
-    "networkTimeout": {
-        "request": 60000
-    },
-    "tabBar": {
-        "custom": true,
-        "backgroundColor": "#101010",
-        "color": "#fff",
-        "selectedColor": "#E3BF68",
-        "list": [{
-                "pagePath": "pages/index/index",
-                "iconPath": "/assets/images/tabbar/index.png",
-                "selectedIconPath": "/assets/images/tabbar/index.png",
-                "text": "首页"
+      "pages": [
+            "pages/index/index",
+            "pages/exam/exam_detail/index",
+            "pages/exam/exam_pay/index",
+            "pages/info-tips/index",
+            "pages/exam/exam_order/index",
+            "pages/certificate/certificate_index/index",
+            "pages/certificate/certificate_query/index",
+            "pages/personal/index",
+            "pages/mechanismAuthentication/index",
+            "pages/login/sign-in/index",
+            "pages/login/register/index",
+            "pages/login/forget-pw/index",
+            "pages/athlete-grading/index",
+            "pages/news/index",
+            "pages/news/detail/index",
+            "pages/train-list/indx"
+      ],
+      "subpackages": [
+            {
+                  "root": "pagesA",
+                  "pages": [
+                        "mine-news/list/index",
+                        "mine-news/detail/index",
+                        "affiliated-institution/index",
+                        "auth-center/index/index",
+                        "auth-center/mechanism/submit-info/index"
+                  ]
             },
             {
-                "pagePath": "pages/personal/index",
-                "iconPath": "/assets/images/tabbar/person.png",
-                "selectedIconPath": "/assets/images/tabbar/person.png",
-                "text": "我的"
+                  "root": "pagesB",
+                  "name": "pack2",
+                  "pages": [
+                        "course/index"
+                  ]
             }
-        ]
-    },
-    "sitemapLocation": "sitemap.json"
+      ],
+      "window": {
+            "backgroundTextStyle": "light",
+            "navigationBarBackgroundColor": "#fff",
+            "navigationBarTitleText": "FIBR平台",
+            "navigationBarTextStyle": "black"
+      },
+      "usingComponents": {
+            "custom-header": "./components/custom-header/index",
+            "scroll-top": "./components/scroll-top/index",
+            "van-button": "@vant/weapp/button/index",
+            "van-uploader": "@vant/weapp/uploader/index",
+            "van-transition": "@vant/weapp/transition/index",
+            "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+            "van-tab": "@vant/weapp/tab/index",
+            "van-tabs": "@vant/weapp/tabs/index",
+            "van-icon": "@vant/weapp/icon/index"
+      },
+      "permission": {
+            "scope.userLocation": {
+                  "desc": "你的位置信息将用于小程序位置接口的效果展示"
+            }
+      },
+      "networkTimeout": {
+            "request": 60000
+      },
+      "tabBar": {
+            "custom": true,
+            "backgroundColor": "#101010",
+            "color": "#fff",
+            "selectedColor": "#E3BF68",
+            "list": [
+                  {
+                        "pagePath": "pages/index/index",
+                        "iconPath": "/assets/images/tabbar/index.png",
+                        "selectedIconPath": "/assets/images/tabbar/index.png",
+                        "text": "首页"
+                  },
+                  {
+                        "pagePath": "pages/personal/index",
+                        "iconPath": "/assets/images/tabbar/person.png",
+                        "selectedIconPath": "/assets/images/tabbar/person.png",
+                        "text": "我的"
+                  }
+            ]
+      },
+      "sitemapLocation": "sitemap.json"
 }

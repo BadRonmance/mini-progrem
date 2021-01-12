@@ -1,1 +1,4 @@
-<van-area class="area_picker" columns-num="{{ areaList.isnoCounty?2:3 }}" area-list="{{ areaList }}" bind:confirm="confirm" bind:cancel="cancel" />
+<view>
+      点击弹出area
+      <area-picker columnsNum="{{3}}" wx:if="{{1==2}}"></area-picker>
+</view>

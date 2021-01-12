@@ -1,0 +1,7 @@
+/* components/form/area/area-picker/index.wxss */
+.area_picker {
+      width: 100%;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+}
