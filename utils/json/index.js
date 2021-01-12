@@ -64,7 +64,7 @@ export default {
             title: "培训机构认证",
             desc: "FIBA官方认证许可培训机构",
             background: "#E3BF65",
-            path: ""
+            path: "/pagesA/auth-center/mechanism/submit-info/index"
       }, {
             title: "教练员认证",
             desc: "官方认证教练员资格",

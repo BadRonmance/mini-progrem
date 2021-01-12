@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "ebring-form": "/components/form/index",
+    "bg-img": "/components/bg-img/index"
+  },
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#101010",
+  "navigationBarTitleText": "认证中心"
+}

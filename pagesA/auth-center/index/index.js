@@ -9,6 +9,17 @@ Page({
             authItemList: wx.JsonData.authItemList
       },
 
+      itemRouter(e) {
+            let path = e.currentTarget.dataset.path
+            console.log(path)
+            if (!path) return
+            if (path === '') return
+            if (wx.util.dataType(path) === 'String') {
+                  wx.navigateTo({
+                        url: path,
+                  })
+            }
+      },
       /**
        * 生命周期函数--监听页面加载
        */

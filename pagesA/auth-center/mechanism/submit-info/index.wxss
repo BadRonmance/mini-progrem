@@ -1,0 +1,6 @@
+/* pagesA/auth-center/mechanism/submit-info/index.wxss */
+@import "../../index/index.wxss";
+
+.auth_title {
+      height: 224rpx;
+}

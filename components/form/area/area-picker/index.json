@@ -1,6 +1,6 @@
 {
       "component": true,
       "usingComponents": {
-            "area-picker": "./area-picker/index"
+            "van-area": "@vant/weapp/area/index"
       }
 }
