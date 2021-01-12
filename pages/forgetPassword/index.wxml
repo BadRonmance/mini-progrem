@@ -1,4 +1,0 @@
-<view id="forgetPassword">
-  <ebring-form form-data="{{formData}}" bindformSubmit="formSubmit"></ebring-form>
-  <view bindtap="back">已有账号?返回登录</view>
-</view>

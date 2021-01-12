@@ -31,10 +31,10 @@ Page({
       background: '',
       noIcon: false
     },
-    isshowTwo: false,
+    isShowTwo: false,
     chioceValue: {
       address: {
-        label: '北京市',val: '110100'
+        label: '北京',val: '110100'
       },
       level: {
         label: 'mini一级',val: '1'
@@ -144,7 +144,7 @@ Page({
   },
   onPageScroll: function(e){
     this.setData({
-      isshowTwo: e.scrollTop > 0 ? true : false
+      isShowTwo: e.scrollTop > 0 ? true : false
     });
   },
   /**

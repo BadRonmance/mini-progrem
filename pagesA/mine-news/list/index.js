@@ -8,7 +8,7 @@ Page({
       data: {
             newsList: [{
                   title: "XXXXX培训机构XXXXX培最新通知XXXXX培训机构XXXXX培最新通知XXXX培训机构XXXXX培最新通知XXXX培训机构XXXXX培最新通知",
-                  time: "2021-01-11 15:23"
+                  time: "2021-01-11 16:48"
             }, {
                   title: "XXXXX培训机构XXXXX培最新通知XXXXX培训机构XXXXX培最新通知XXXX培训机构XXXXX培最新通知XXXX培训机构XXXXX培最新通知",
                   time: "2021-01-11 14:23"

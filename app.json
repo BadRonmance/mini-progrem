@@ -1,22 +1,20 @@
 {
     "pages": [
+        "pages/index/index",
         "pages/exam/exam_detail/index",
         "pages/exam/exam_pay/index",
         "pages/exam/exam_order/index",
         "pages/certificate/certificate_index/index",
         "pages/certificate/certificate_query/index",
-        "pages/index/index",
         "pages/personal/index",
-        "pages/login/index",
-        "pages/news/index",
-        "pages/forgetPassword/index",
-        "pages/register/index",
         "pages/mechanismAuthentication/index",
+        "pages/login/index",
         "pages/login/sign-in/index",
         "pages/login/register/index",
         "pages/login/forget-pw/index",
         "pages/athlete-grading/index",
-        "pages/news-detail/index",
+        "pages/news/index",
+        "pages/news/detail/index",
         "pages/train-list/indx"
     ],
     "subpackages": [{
